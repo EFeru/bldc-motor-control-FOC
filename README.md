@@ -1,8 +1,8 @@
-# bldc-motor-FOC
+# bldc-motor-control-FOC
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=CU2SWN2XV9SCY&currency_code=EUR&source=url)
 
-This repository implements Field Oriented Control (FOC) for BLDC motors in Matlab/Simulink. The controller was deployed and tested on a hoverboard embedded platform (see [hoverboard-firmware-hack-FOC](https://github.com/EmanuelFeru/hoverboard-firmware-hack-FOC)).
+This repository implements Field Oriented Control (FOC) for BLDC motors in Matlab/Simulink. The controller was deployed and tested on a real-time hoverboard embedded platform (see [hoverboard-firmware-hack-FOC](https://github.com/EmanuelFeru/hoverboard-firmware-hack-FOC)).
 
 ---
 ## FOC Architecture
