@@ -30,7 +30,7 @@ In this implementation 3 control types are available:
 
 ![Schematic representation of the available control methods](/02_Figures/control_methods.png)
 
-The C code for the controller is capable for auto-code generated using [Matlab/Simulink](https://nl.mathworks.com/solutions/embedded-code-generation.html). The controller is designed to operate with stock hoverboard motors. However, with slight modifications, the controller can be adapted to other available BLDC motors.
+The C code for the controller is capable for auto-code generated using [Matlab/Simulink](https://nl.mathworks.com/solutions/embedded-code-generation.html). The controller is designed for [stock hoverboard motors](https://github.com/EmanuelFeru/hoverboard-firmware-hack-FOC/blob/master/docs/pictures/motor_inside.jpg) with the motor windings construction as shown [here](https://github.com/EmanuelFeru/hoverboard-firmware-hack-FOC/blob/master/docs/pictures/motor_winding.png). However, with slight modifications, the controller can be adapted to other available BLDC motors.
 
 To explore the controller without a Matlab/Simulink installation a [webview](/BLDC_controller_ert_rtw/html/webview) was created. The webview allows to visualize the controller with browsers like: Microsoft Internet Explorer or Microsoft Edgeview.
 
