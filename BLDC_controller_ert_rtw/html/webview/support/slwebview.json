@@ -5,10 +5,10 @@
  "sections":[
   {
    "hid":1,
-   "sid":"BLDCmotorControl_FOC_R2017b_fixdt",
-   "name":"BLDCmotorControl_FOC_R2017b_fixdt",
-   "fullname":"BLDCmotorControl_FOC_R2017b_fixdt",
-   "label":"BLDCmotorControl_FOC_R2017b_fixdt",
+   "sid":"BLDCmotor_FOC_R2017b_fixdt",
+   "name":"BLDCmotor_FOC_R2017b_fixdt",
+   "fullname":"BLDCmotor_FOC_R2017b_fixdt",
+   "label":"BLDCmotor_FOC_R2017b_fixdt",
    "parent":0,
    "descendants":[
     2,
@@ -100,10 +100,13 @@
     88,
     89,
     90,
-    91
+    91,
+    92,
+    93,
+    94
    ],
-   "hierarchyUrl":"support/slwebview_files/BLDCmotorControl_FOC_R2017b_fixdt_h_1.json",
-   "backingUrl":"support/slwebview_files/BLDCmotorControl_FOC_R2017b_fixdt_m.json"
+   "hierarchyUrl":"support/slwebview_files/BLDCmotor_FOC_R2017b_fixdt_h_1.json",
+   "backingUrl":"support/slwebview_files/BLDCmotor_FOC_R2017b_fixdt_m.json"
   }
  ],
  "optViews":[
@@ -111,5 +114,5 @@
  "display":{
   "informer":false
  },
- "iconsUrl":"support/slwebview_files/BLDCmotorControl_FOC_R2017b_fixdt_29_icons.css"
+ "iconsUrl":"support/slwebview_files/BLDCmotor_FOC_R2017b_fixdt_29_icons.css"
 }

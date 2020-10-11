@@ -10,7 +10,7 @@
 % >> improved motor efficiency -> lower energy consumption
 %
 % Author: Emanuel FERU
-% Copyright © 2019-2020 Emanuel FERU <aerdronix@gmail.com>
+% Copyright © 2019-2021 Emanuel FERU <aerdronix@gmail.com>
 %
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
@@ -39,7 +39,7 @@ f_ctrl              = 16e3;                         % [Hz] Controller frequency 
 % Ts_ctrl             = 12e-5;                      % [s] Controller sampling time (~8 kHz)
 
 % Motor parameters
-n_polePairs         = 15;                           % [-] Number of pole pairs
+n_polePairs         = 15;                           % [-] Number of motor pole pairs
 a_elecPeriod        = 360;                          % [deg] Electrical angle period
 a_elecAngle         = 60;                           % [deg] Electrical angle between two Hall sensor changing events
 a_mechAngle         = a_elecAngle / n_polePairs;    % [deg] Mechanical angle between two Hall sensor changing events
@@ -58,17 +58,21 @@ r_cos_M1            = cos((a_elecAngle_XA + 30)*(pi/180));
 
 %% Control selection
 % Control type selection
-CTRL_COM            = 0;        % [-] Commutation Control
-CTRL_SIN            = 1;        % [-] Sinusoidal Control
-CTRL_FOC            = 2;        % [-] Field Oriented Control (FOC)
-z_ctrlTypSel        = CTRL_FOC; % [-] Control Type Selection (default)
+CTRL_COM            = 0;                % [-] Commutation Control
+CTRL_SIN            = 1;                % [-] Sinusoidal Control
+CTRL_FOC            = 2;                % [-] Field Oriented Control (FOC)
+z_ctrlTypSel        = CTRL_FOC;         % [-] Control Type Selection (default)
 
 % Control model request
-OPEN_MODE           = 0;        % [-] Open mode
-VLT_MODE            = 1;        % [-] Voltage mode
-SPD_MODE            = 2;        % [-] Speed mode
-TRQ_MODE            = 3;        % [-] Torque mode
-z_ctrlModReq        = VLT_MODE; % [-] Control Mode Request (default)
+OPEN_MODE           = 0;                % [-] Open mode
+VLT_MODE            = 1;                % [-] Voltage mode
+SPD_MODE            = 2;                % [-] Speed mode
+TRQ_MODE            = 3;                % [-] Torque mode
+z_ctrlModReq        = VLT_MODE;         % [-] Control Mode Request (default)
+
+% Cruise control
+b_cruiseCtrlEna     = 0;                % [-] Cruise control enable flag: 0 = disable (default), 1 = enable
+n_cruiseMotTgt      = 0;                % [-] Cruise control motor speed target
 
 
 %% F01_Estimations
@@ -79,13 +83,16 @@ vec_hallToPos       = [0 2 0 1 4 3 5 0];  % [-] Mapping Hall signal to position
 
 % Speed Calculation Parameters
 cf_speedCoef        = round(f_ctrl * a_mechAngle * (pi/180) * (30/pi));     % [-] Speed calculation coefficient (factors are due to conversions rpm <-> rad/s)
-z_maxCntRst         = 2000;     % [-] Maximum counter value for reset (works also as time-out to detect standing still)
-n_commDeacvHi       = 30;       % [rpm] Commutation method deactivation speed high
-n_commAcvLo         = 15;       % [rpm] Commutation method activation speed low
-dz_cntTrnsDetHi     = 40;       % [-] Counter gradient High for transient behavior detection (used for speed estimation)
-dz_cntTrnsDetLo     = 20;       % [-] Counter gradient Low for steady state detection (used for speed estimation)
-n_stdStillDet       = 3;        % [rpm] Speed threshold for Stand still detection
-cf_currFilt         = 0.12;     % [%] Current filter coefficient [0, 1]. Lower values mean softer filter
+z_maxCntRst         = 2000;             % [-] Maximum counter value for reset (works also as time-out to detect standing still)
+n_commDeacvHi       = 30;               % [rpm] Commutation method deactivation speed high
+n_commAcvLo         = 15;               % [rpm] Commutation method activation speed low
+dz_cntTrnsDetHi     = 40;               % [-] Counter gradient High for transient behavior detection (used for speed estimation)
+dz_cntTrnsDetLo     = 20;               % [-] Counter gradient Low for steady state detection (used for speed estimation)
+n_stdStillDet       = 3;                % [rpm] Speed threshold for Stand still detection
+cf_currFilt         = 0.12;             % [%] Current filter coefficient [0, 1]. Lower values mean softer filter
+
+% Motor Angle Measurement (e.g. using an encoder)
+b_angleMeasEna      = 0;                % [-] Enable flag for external mechanical motor angle sensor: 0 = estimated (default), 1 = measured
 
 %% F02_Diagnostics
 b_diagEna           = 1;                % [-] Diagnostics enable flag: 0 = Disabled, 1 = Enabled (default)
@@ -98,8 +105,8 @@ dV_openRate         = 1000 / (f_ctrl/3);% [V/s] Rate for voltage cut-off in Open
 
 %% F04_Field_Weakening
 b_fieldWeakEna      = 0;                % [-] Field weakening enable flag: 0 = disable (default), 1 = enable
-r_fieldWeakHi       = 1500;             % [-] Input target High threshold for reaching maximum Field Weakening / Phase Advance
-r_fieldWeakLo       = 1000;             % [-] Input target Low threshold for starting Field Weakening / Phase Advance
+r_fieldWeakHi       = 1000;             % [1000, 1500] Input target High threshold for reaching maximum Field Weakening / Phase Advance
+r_fieldWeakLo       = 750;              % [ 500, 1000] Input target Low threshold for starting Field Weakening / Phase Advance
 n_fieldWeakAuthHi   = 400;              % [rpm] Motor speed High for field weakening authorization
 n_fieldWeakAuthLo   = 300;              % [rpm] Motor speed Low for field weakening authorization
 
@@ -111,7 +118,7 @@ a_phaAdvMax         = 25;               % [deg] Maximum phase advance angle
 
 
 %% F05_Field_Oriented_Control
-b_selPhaABCurrMeas  = 1;                % [-] Select measured current phases: {iA,iB} = 1 (default); {iB,iC} = 0
+z_selPhaCurMeasABC  = 0;                % [-] Select measured current phases: {iA,iB} = 0; {iB,iC} = 1; {iA,iC} = 2
 
 % Motor Limitations Calibratables
 cf_iqKiLimProt      = 60 / (f_ctrl/3);  % [-] Current limit protection integral gain (only used in VLT_MODE and SPD_MODE)
@@ -127,7 +134,7 @@ Vq_max_M1           = sqrt(Vd_max^2 - Vq_max_XA.^2);  % Circle limitations look-
 % stairs(Vq_max_XA, Vq_max_M1); legend('V_{max}');
 
 % Speed limitations
-n_max               = 1000;             % [rpm] Maximum motor speed
+n_max               = 1500;             % [rpm] Maximum motor speed: [-1500, 1500]
 
 % Current Limitations
 i_max               = 15;               % [A] Maximum allowed motor current (continuous)

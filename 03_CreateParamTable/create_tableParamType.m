@@ -23,8 +23,8 @@
 % get_param(gcb, 'BlockType')
 
 % Compile model
-BLDCmotorControl_FOC_R2017b_fixdt([],[],[],'compile');
-modelName = 'BLDCmotorControl_FOC_R2017b_fixdt';
+BLDCmotor_FOC_R2017b_fixdt([],[],[],'compile');
+modelName = 'BLDCmotor_FOC_R2017b_fixdt';
 
 Parameter   = '';
 DataType    = '';
@@ -89,7 +89,7 @@ for k = 1:length(Blocks)
 end
 
 % Terminate compilation
-BLDCmotorControl_FOC_R2017b_fixdt([],[],[],'term');
+BLDCmotor_FOC_R2017b_fixdt([],[],[],'term');
 
 % Create table
 T = table(Parameter,DataType);
