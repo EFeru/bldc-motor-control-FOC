@@ -214,37 +214,6 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10454:2839",
-  "className":"Simulink.Signum",
-  "icon":"WebViewIcon3",
-  "name":"SignDeltaU3",
-  "label":"SignDeltaU3",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:10454:2816",
-  "inspector":{
-   "params":[
-    "ZeroCross",
-    "SampleTime"
-   ],
-   "values":[
-    "on",
-    "-1"
-   ],
-   "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"Signum",
-   "masktype":""
-  }
- },
- {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:10454:2837",
   "className":"Simulink.Signum",
   "icon":"WebViewIcon3",
@@ -276,40 +245,38 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10454:2840",
-  "className":"Simulink.DataTypeConversion",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10454:2841",
+  "className":"Simulink.RelationalOperator",
   "icon":"WebViewIcon3",
-  "name":"DataTypeConv4",
-  "label":"DataTypeConv4",
+  "name":"Equal1",
+  "label":"Equal1",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:10454:2816",
   "inspector":{
    "params":[
-    "OutMin",
-    "OutMax",
+    "Operator",
+    "InputSameDT",
     "OutDataTypeStr",
-    "LockScale",
-    "ConvertRealWorld",
     "RndMeth",
-    "SaturateOnIntegerOverflow",
-    "SampleTime"
+    "SampleTime",
+    "ZeroCross"
    ],
    "values":[
-    "[]",
-    "[]",
-    "int8",
+    "==",
     "on",
-    "Real World Value (RWV)",
+    "Inherit: Logical (see Configuration Parameters: Optimization)",
     "Zero",
-    "off",
-    "-1"
+    "-1",
+    "on"
    ],
    "tabs":[
-    "Parameter Attributes",
+    "Main",
+    "Data Type",
     "-Other"
    ],
    "tabs_idx":[
     0,
-    7
+    1,
+    4
    ]
   },
   "viewer":{
@@ -318,16 +285,16 @@
   "obj_viewer":[
   ],
   "finder":{
-   "blocktype":"DataTypeConversion",
+   "blocktype":"RelationalOperator",
    "masktype":""
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10454:2836",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10454:2840",
   "className":"Simulink.DataTypeConversion",
   "icon":"WebViewIcon3",
-  "name":"DataTypeConv3",
-  "label":"DataTypeConv3",
+  "name":"DataTypeConv4",
+  "label":"DataTypeConv4",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:10454:2816",
   "inspector":{
    "params":[
@@ -437,38 +404,40 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10454:2841",
-  "className":"Simulink.RelationalOperator",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10454:2836",
+  "className":"Simulink.DataTypeConversion",
   "icon":"WebViewIcon3",
-  "name":"Equal1",
-  "label":"Equal1",
+  "name":"DataTypeConv3",
+  "label":"DataTypeConv3",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:10454:2816",
   "inspector":{
    "params":[
-    "Operator",
-    "InputSameDT",
+    "OutMin",
+    "OutMax",
     "OutDataTypeStr",
+    "LockScale",
+    "ConvertRealWorld",
     "RndMeth",
-    "SampleTime",
-    "ZeroCross"
+    "SaturateOnIntegerOverflow",
+    "SampleTime"
    ],
    "values":[
-    "==",
+    "[]",
+    "[]",
+    "int8",
     "on",
-    "Inherit: Logical (see Configuration Parameters: Optimization)",
+    "Real World Value (RWV)",
     "Zero",
-    "-1",
-    "on"
+    "off",
+    "-1"
    ],
    "tabs":[
-    "Main",
-    "Data Type",
+    "Parameter Attributes",
     "-Other"
    ],
    "tabs_idx":[
     0,
-    1,
-    4
+    7
    ]
   },
   "viewer":{
@@ -477,7 +446,38 @@
   "obj_viewer":[
   ],
   "finder":{
-   "blocktype":"RelationalOperator",
+   "blocktype":"DataTypeConversion",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10454:2839",
+  "className":"Simulink.Signum",
+  "icon":"WebViewIcon3",
+  "name":"SignDeltaU3",
+  "label":"SignDeltaU3",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:10454:2816",
+  "inspector":{
+   "params":[
+    "ZeroCross",
+    "SampleTime"
+   ],
+   "values":[
+    "on",
+    "-1"
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Signum",
    "masktype":""
   }
  },

@@ -1,54 +1,5 @@
 [
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10662",
-  "className":"Simulink.Constant",
-  "icon":"WebViewIcon3",
-  "name":"cf_iqKiLimProt",
-  "label":"cf_iqKiLimProt",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:10584",
-  "inspector":{
-   "params":[
-    "Value",
-    "VectorParams1D",
-    "SampleTime",
-    "OutMin",
-    "OutMax",
-    "OutDataTypeStr",
-    "LockScale",
-    "FramePeriod"
-   ],
-   "values":[
-    "cf_iqKiLimProt",
-    "on",
-    "inf",
-    "[]",
-    "[]",
-    "fixdt(0,16,16)",
-    "off",
-    "inf"
-   ],
-   "tabs":[
-    "Main",
-    "Signal Attributes",
-    "-Other"
-   ],
-   "tabs_idx":[
-    0,
-    3,
-    7
-   ]
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"Constant",
-   "masktype":""
-  }
- },
- {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:10600",
   "className":"Simulink.Outport",
   "icon":"WebViewIcon3",
@@ -125,6 +76,114 @@
   ],
   "finder":{
    "blocktype":"Outport",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10662",
+  "className":"Simulink.Constant",
+  "icon":"WebViewIcon3",
+  "name":"cf_iqKiLimProt",
+  "label":"cf_iqKiLimProt",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:10584",
+  "inspector":{
+   "params":[
+    "Value",
+    "VectorParams1D",
+    "SampleTime",
+    "OutMin",
+    "OutMax",
+    "OutDataTypeStr",
+    "LockScale",
+    "FramePeriod"
+   ],
+   "values":[
+    "cf_iqKiLimProt",
+    "on",
+    "inf",
+    "[]",
+    "[]",
+    "fixdt(0,16,16)",
+    "off",
+    "inf"
+   ],
+   "tabs":[
+    "Main",
+    "Signal Attributes",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    3,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Constant",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10597",
+  "className":"Simulink.Sum",
+  "icon":"WebViewIcon3",
+  "name":"Sum3",
+  "label":"Sum3",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:10584",
+  "inspector":{
+   "params":[
+    "IconShape",
+    "Inputs",
+    "InputSameDT",
+    "AccumDataTypeStr",
+    "OutMin",
+    "OutMax",
+    "OutDataTypeStr",
+    "LockScale",
+    "RndMeth",
+    "SaturateOnIntegerOverflow",
+    "CollapseDim",
+    "CollapseMode",
+    "SampleTime"
+   ],
+   "values":[
+    "round",
+    "|+-",
+    "off",
+    "Inherit: Inherit via internal rule",
+    "[]",
+    "[]",
+    "Inherit: Inherit via internal rule",
+    "off",
+    "Simplest",
+    "off",
+    "1",
+    "All dimensions",
+    "-1"
+   ],
+   "tabs":[
+    "Main",
+    "Signal Attributes",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    2,
+    10
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Sum",
    "masktype":""
   }
  },
@@ -256,70 +315,11 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10597",
-  "className":"Simulink.Sum",
-  "icon":"WebViewIcon3",
-  "name":"Sum3",
-  "label":"Sum3",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:10584",
-  "inspector":{
-   "params":[
-    "IconShape",
-    "Inputs",
-    "InputSameDT",
-    "AccumDataTypeStr",
-    "OutMin",
-    "OutMax",
-    "OutDataTypeStr",
-    "LockScale",
-    "RndMeth",
-    "SaturateOnIntegerOverflow",
-    "CollapseDim",
-    "CollapseMode",
-    "SampleTime"
-   ],
-   "values":[
-    "round",
-    "|+-",
-    "off",
-    "Inherit: Inherit via internal rule",
-    "[]",
-    "[]",
-    "Inherit: Inherit via internal rule",
-    "off",
-    "Simplest",
-    "off",
-    "1",
-    "All dimensions",
-    "-1"
-   ],
-   "tabs":[
-    "Main",
-    "Signal Attributes",
-    "-Other"
-   ],
-   "tabs_idx":[
-    0,
-    2,
-    10
-   ]
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"Sum",
-   "masktype":""
-  }
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10586",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10587",
   "className":"Simulink.Inport",
   "icon":"WebViewIcon3",
-  "name":"iq_max",
-  "label":"iq_max",
+  "name":"iq_min",
+  "label":"iq_min",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:10584",
   "inspector":{
    "params":[
@@ -342,7 +342,7 @@
     "OutputFunctionCall"
    ],
    "values":[
-    "2",
+    "3",
     "Port number",
     "[]",
     "[]",
@@ -382,11 +382,11 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10587",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10586",
   "className":"Simulink.Inport",
   "icon":"WebViewIcon3",
-  "name":"iq_min",
-  "label":"iq_min",
+  "name":"iq_max",
+  "label":"iq_max",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:10584",
   "inspector":{
    "params":[
@@ -409,7 +409,7 @@
     "OutputFunctionCall"
    ],
    "values":[
-    "3",
+    "2",
     "Port number",
     "[]",
     "[]",

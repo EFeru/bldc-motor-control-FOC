@@ -80,39 +80,27 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2490",
-  "className":"Simulink.RelationalOperator",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2489",
+  "className":"Simulink.Goto",
   "icon":"WebViewIcon3",
-  "name":"Relational Operator2",
-  "label":"Relational Operator2",
+  "name":"Goto2",
+  "label":"Goto2",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
   "inspector":{
    "params":[
-    "Operator",
-    "InputSameDT",
-    "OutDataTypeStr",
-    "RndMeth",
-    "SampleTime",
-    "ZeroCross"
+    "GotoTag",
+    "TagVisibility",
+    "IconDisplay"
    ],
    "values":[
-    ">",
-    "off",
-    "boolean",
-    "Simplest",
-    "-1",
-    "on"
+    "b_cntRst",
+    "local",
+    "Tag"
    ],
    "tabs":[
-    "Main",
-    "Data Type",
-    "-Other"
+    "Parameter Attributes"
    ],
-   "tabs_idx":[
-    0,
-    1,
-    4
-   ]
+   "tabs_idx":0
   },
   "viewer":{
    "jshandler":"webview/handlers/ElementHandler"
@@ -120,7 +108,7 @@
   "obj_viewer":[
   ],
   "finder":{
-   "blocktype":"RelationalOperator",
+   "blocktype":"Goto",
    "masktype":""
   }
  },
@@ -189,11 +177,11 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2483",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2482",
   "className":"Simulink.From",
   "icon":"WebViewIcon3",
-  "name":"From2",
-  "label":"From2",
+  "name":"From10",
+  "label":"From10",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
   "inspector":{
    "params":[
@@ -201,7 +189,7 @@
     "IconDisplay"
    ],
    "values":[
-    "yAcv",
+    "tAcv",
     "Tag"
    ],
    "tabs":[
@@ -220,11 +208,56 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2482",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2490",
+  "className":"Simulink.RelationalOperator",
+  "icon":"WebViewIcon3",
+  "name":"Relational Operator2",
+  "label":"Relational Operator2",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
+  "inspector":{
+   "params":[
+    "Operator",
+    "InputSameDT",
+    "OutDataTypeStr",
+    "RndMeth",
+    "SampleTime",
+    "ZeroCross"
+   ],
+   "values":[
+    ">",
+    "off",
+    "boolean",
+    "Simplest",
+    "-1",
+    "on"
+   ],
+   "tabs":[
+    "Main",
+    "Data Type",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    1,
+    4
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"RelationalOperator",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2481",
   "className":"Simulink.From",
   "icon":"WebViewIcon3",
-  "name":"From10",
-  "label":"From10",
+  "name":"From1",
+  "label":"From1",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
   "inspector":{
    "params":[
@@ -232,7 +265,7 @@
     "IconDisplay"
    ],
    "values":[
-    "tAcv",
+    "yPrev",
     "Tag"
    ],
    "tabs":[
@@ -308,11 +341,44 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2481",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2486",
+  "className":"Simulink.Goto",
+  "icon":"WebViewIcon3",
+  "name":"Goto",
+  "label":"Goto",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
+  "inspector":{
+   "params":[
+    "GotoTag",
+    "TagVisibility",
+    "IconDisplay"
+   ],
+   "values":[
+    "tAcv",
+    "local",
+    "Tag"
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Goto",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2484",
   "className":"Simulink.From",
   "icon":"WebViewIcon3",
-  "name":"From1",
-  "label":"From1",
+  "name":"From7",
+  "label":"From7",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
   "inspector":{
    "params":[
@@ -320,7 +386,7 @@
     "IconDisplay"
    ],
    "values":[
-    "yPrev",
+    "tAcv",
     "Tag"
    ],
    "tabs":[
@@ -339,31 +405,51 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2480",
-  "className":"Simulink.SubSystem",
-  "icon":"WebViewIcon4",
-  "name":"Counter",
-  "label":"Counter",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2479",
+  "className":"Simulink.Constant",
+  "icon":"WebViewIcon3",
+  "name":"Constant6",
+  "label":"Constant6",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
   "inspector":{
    "params":[
-    "z_cntInit"
+    "Value",
+    "VectorParams1D",
+    "SampleTime",
+    "OutMin",
+    "OutMax",
+    "OutDataTypeStr",
+    "LockScale",
+    "FramePeriod"
    ],
    "values":[
-    "0"
+    "1",
+    "on",
+    "inf",
+    "[]",
+    "[]",
+    "uint16",
+    "off",
+    "inf"
    ],
    "tabs":[
+    "Main",
+    "Signal Attributes",
+    "-Other"
    ],
    "tabs_idx":[
+    0,
+    3,
+    7
    ]
   },
   "viewer":{
-   "jshandler":"webview/handlers/ContainerHandler"
+   "jshandler":"webview/handlers/ElementHandler"
   },
   "obj_viewer":[
   ],
   "finder":{
-   "blocktype":"SubSystem",
+   "blocktype":"Constant",
    "masktype":""
   }
  },
@@ -417,82 +503,31 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2477",
-  "className":"Simulink.ActionPort",
-  "icon":"WebViewIcon3",
-  "name":"Action Port",
-  "label":"Action Port",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2480",
+  "className":"Simulink.SubSystem",
+  "icon":"WebViewIcon4",
+  "name":"Counter",
+  "label":"Counter",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
   "inspector":{
    "params":[
-    "InitializeStates",
-    "PropagateVarSize"
+    "z_cntInit"
    ],
    "values":[
-    "held",
-    "Only when execution is resumed"
+    "0"
    ],
    "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"ActionPort",
-   "masktype":""
-  }
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2479",
-  "className":"Simulink.Constant",
-  "icon":"WebViewIcon3",
-  "name":"Constant6",
-  "label":"Constant6",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
-  "inspector":{
-   "params":[
-    "Value",
-    "VectorParams1D",
-    "SampleTime",
-    "OutMin",
-    "OutMax",
-    "OutDataTypeStr",
-    "LockScale",
-    "FramePeriod"
-   ],
-   "values":[
-    "1",
-    "on",
-    "inf",
-    "[]",
-    "[]",
-    "uint16",
-    "off",
-    "inf"
-   ],
-   "tabs":[
-    "Main",
-    "Signal Attributes",
-    "-Other"
    ],
    "tabs_idx":[
-    0,
-    3,
-    7
    ]
   },
   "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
+   "jshandler":"webview/handlers/ContainerHandler"
   },
   "obj_viewer":[
   ],
   "finder":{
-   "blocktype":"Constant",
+   "blocktype":"SubSystem",
    "masktype":""
   }
  },
@@ -564,11 +599,75 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2484",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2487",
+  "className":"Simulink.Goto",
+  "icon":"WebViewIcon3",
+  "name":"Goto1",
+  "label":"Goto1",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
+  "inspector":{
+   "params":[
+    "GotoTag",
+    "TagVisibility",
+    "IconDisplay"
+   ],
+   "values":[
+    "yAcv",
+    "local",
+    "Tag"
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Goto",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2477",
+  "className":"Simulink.ActionPort",
+  "icon":"WebViewIcon3",
+  "name":"Action Port",
+  "label":"Action Port",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
+  "inspector":{
+   "params":[
+    "InitializeStates",
+    "PropagateVarSize"
+   ],
+   "values":[
+    "held",
+    "Only when execution is resumed"
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"ActionPort",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2483",
   "className":"Simulink.From",
   "icon":"WebViewIcon3",
-  "name":"From7",
-  "label":"From7",
+  "name":"From2",
+  "label":"From2",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
   "inspector":{
    "params":[
@@ -576,7 +675,7 @@
     "IconDisplay"
    ],
    "values":[
-    "tAcv",
+    "yAcv",
     "Tag"
    ],
    "tabs":[
@@ -662,39 +761,6 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2489",
-  "className":"Simulink.Goto",
-  "icon":"WebViewIcon3",
-  "name":"Goto2",
-  "label":"Goto2",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
-  "inspector":{
-   "params":[
-    "GotoTag",
-    "TagVisibility",
-    "IconDisplay"
-   ],
-   "values":[
-    "b_cntRst",
-    "local",
-    "Tag"
-   ],
-   "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"Goto",
-   "masktype":""
-  }
- },
- {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2474",
   "className":"Simulink.Inport",
   "icon":"WebViewIcon3",
@@ -758,72 +824,6 @@
   ],
   "finder":{
    "blocktype":"Inport",
-   "masktype":""
-  }
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2487",
-  "className":"Simulink.Goto",
-  "icon":"WebViewIcon3",
-  "name":"Goto1",
-  "label":"Goto1",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
-  "inspector":{
-   "params":[
-    "GotoTag",
-    "TagVisibility",
-    "IconDisplay"
-   ],
-   "values":[
-    "yAcv",
-    "local",
-    "Tag"
-   ],
-   "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"Goto",
-   "masktype":""
-  }
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:8486:2486",
-  "className":"Simulink.Goto",
-  "icon":"WebViewIcon3",
-  "name":"Goto",
-  "label":"Goto",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:8486:2473",
-  "inspector":{
-   "params":[
-    "GotoTag",
-    "TagVisibility",
-    "IconDisplay"
-   ],
-   "values":[
-    "tAcv",
-    "local",
-    "Tag"
-   ],
-   "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"Goto",
    "masktype":""
   }
  },

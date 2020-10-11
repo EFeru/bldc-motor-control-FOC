@@ -5,7 +5,7 @@
  *
  * Model version                  : 1.1284
  * Simulink Coder version         : 8.13 (R2017b) 24-Jul-2017
- * C/C++ source code generated on : Sun Oct 11 20:20:20 2020
+ * C/C++ source code generated on : Sun Oct 11 21:38:56 2020
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -129,7 +129,7 @@ typedef struct {
   int8_T Switch2_e;                    /* '<S11>/Switch2' */
   int8_T UnitDelay2_DSTATE_b;          /* '<S11>/UnitDelay2' */
   int8_T If4_ActiveSubsystem;          /* '<S1>/If4' */
-  int8_T If1_ActiveSubsystem_p;        /* '<S1>/If1' */
+  int8_T If1_ActiveSubsystem;          /* '<S1>/If1' */
   int8_T If2_ActiveSubsystem;          /* '<S31>/If2' */
   int8_T If2_ActiveSubsystem_a;        /* '<S6>/If2' */
   int8_T If1_ActiveSubsystem_e;        /* '<S6>/If1' */
@@ -216,7 +216,6 @@ typedef struct {
   int16_T DC_phaC;                     /* '<Root>/DC_phaC' */
   uint8_T z_errCode;                   /* '<Root>/z_errCode' */
   int16_T n_mot;                       /* '<Root>/n_mot' */
-  int16_T n_motHiRes;                  /* '<Root>/n_motHiRes' */
   int16_T a_elecAngle;                 /* '<Root>/a_elecAngle' */
   int16_T iq;                          /* '<Root>/iq' */
   int16_T id;                          /* '<Root>/id' */

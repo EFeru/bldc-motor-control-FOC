@@ -180,11 +180,44 @@
   ]
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:32",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:12",
   "className":"Stateflow.Transition",
   "icon":"WebViewIcon9",
   "name":"",
-  "label":"[b_toSpdMod]",
+  "label":"",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
+  "inspector":{
+   "params":[
+    "ExecutionOrder",
+    "LabelString",
+    "Description",
+    "Document"
+   ],
+   "values":[
+    2,
+    "",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:71",
+  "className":"Stateflow.Transition",
+  "icon":"WebViewIcon9",
+  "name":"",
+  "label":"[~b_toTrqMod]",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
   "inspector":{
    "params":[
@@ -195,7 +228,7 @@
    ],
    "values":[
     1,
-    "[b_toSpdMod]",
+    "[~b_toTrqMod]",
     "",
     ""
    ],
@@ -229,6 +262,138 @@
    "values":[
     1,
     "[~b_toSpdMod]",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:9",
+  "className":"Stateflow.Transition",
+  "icon":"WebViewIcon9",
+  "name":"",
+  "label":"",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
+  "inspector":{
+   "params":[
+    "ExecutionOrder",
+    "LabelString",
+    "Description",
+    "Document"
+   ],
+   "values":[
+    1,
+    "",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:31",
+  "className":"Stateflow.Transition",
+  "icon":"WebViewIcon9",
+  "name":"",
+  "label":"[b_toTrqMod]",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
+  "inspector":{
+   "params":[
+    "ExecutionOrder",
+    "LabelString",
+    "Description",
+    "Document"
+   ],
+   "values":[
+    1,
+    "[b_toTrqMod]",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:33",
+  "className":"Stateflow.Transition",
+  "icon":"WebViewIcon9",
+  "name":"",
+  "label":"",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
+  "inspector":{
+   "params":[
+    "ExecutionOrder",
+    "LabelString",
+    "Description",
+    "Document"
+   ],
+   "values":[
+    1,
+    "",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:32",
+  "className":"Stateflow.Transition",
+  "icon":"WebViewIcon9",
+  "name":"",
+  "label":"[b_toSpdMod]",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
+  "inspector":{
+   "params":[
+    "ExecutionOrder",
+    "LabelString",
+    "Description",
+    "Document"
+   ],
+   "values":[
+    1,
+    "[b_toSpdMod]",
     "",
     ""
    ],
@@ -312,171 +477,6 @@
   ]
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:9",
-  "className":"Stateflow.Transition",
-  "icon":"WebViewIcon9",
-  "name":"",
-  "label":"",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
-  "inspector":{
-   "params":[
-    "ExecutionOrder",
-    "LabelString",
-    "Description",
-    "Document"
-   ],
-   "values":[
-    1,
-    "",
-    "",
-    ""
-   ],
-   "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":[
-  ]
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:71",
-  "className":"Stateflow.Transition",
-  "icon":"WebViewIcon9",
-  "name":"",
-  "label":"[~b_toTrqMod]",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
-  "inspector":{
-   "params":[
-    "ExecutionOrder",
-    "LabelString",
-    "Description",
-    "Document"
-   ],
-   "values":[
-    1,
-    "[~b_toTrqMod]",
-    "",
-    ""
-   ],
-   "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":[
-  ]
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:33",
-  "className":"Stateflow.Transition",
-  "icon":"WebViewIcon9",
-  "name":"",
-  "label":"",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
-  "inspector":{
-   "params":[
-    "ExecutionOrder",
-    "LabelString",
-    "Description",
-    "Document"
-   ],
-   "values":[
-    1,
-    "",
-    "",
-    ""
-   ],
-   "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":[
-  ]
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:12",
-  "className":"Stateflow.Transition",
-  "icon":"WebViewIcon9",
-  "name":"",
-  "label":"",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
-  "inspector":{
-   "params":[
-    "ExecutionOrder",
-    "LabelString",
-    "Description",
-    "Document"
-   ],
-   "values":[
-    2,
-    "",
-    "",
-    ""
-   ],
-   "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":[
-  ]
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:31",
-  "className":"Stateflow.Transition",
-  "icon":"WebViewIcon9",
-  "name":"",
-  "label":"[b_toTrqMod]",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
-  "inspector":{
-   "params":[
-    "ExecutionOrder",
-    "LabelString",
-    "Description",
-    "Document"
-   ],
-   "values":[
-    1,
-    "[b_toTrqMod]",
-    "",
-    ""
-   ],
-   "tabs":[
-    "Parameter Attributes"
-   ],
-   "tabs_idx":0
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":[
-  ]
- },
- {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:1",
   "className":"Stateflow.State",
   "icon":"WebViewIcon8",
@@ -522,11 +522,11 @@
   ]
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:14",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:13",
   "className":"Stateflow.Transition",
   "icon":"WebViewIcon9",
   "name":"",
-  "label":"[b_toOpen]",
+  "label":"[b_toActive]",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
   "inspector":{
    "params":[
@@ -537,7 +537,7 @@
    ],
    "values":[
     1,
-    "[b_toOpen]",
+    "[b_toActive]",
     "",
     ""
    ],
@@ -588,11 +588,11 @@
   ]
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:13",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:11200:14",
   "className":"Stateflow.Transition",
   "icon":"WebViewIcon9",
   "name":"",
-  "label":"[b_toActive]",
+  "label":"[b_toOpen]",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11200",
   "inspector":{
    "params":[
@@ -603,7 +603,7 @@
    ],
    "values":[
     1,
-    "[b_toActive]",
+    "[b_toOpen]",
     "",
     ""
    ],

@@ -1,5 +1,111 @@
 [
  {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10455:2788",
+  "className":"Simulink.Sum",
+  "icon":"WebViewIcon3",
+  "name":"Sum1",
+  "label":"Sum1",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:10455:2779",
+  "inspector":{
+   "params":[
+    "IconShape",
+    "Inputs",
+    "InputSameDT",
+    "AccumDataTypeStr",
+    "OutMin",
+    "OutMax",
+    "OutDataTypeStr",
+    "LockScale",
+    "RndMeth",
+    "SaturateOnIntegerOverflow",
+    "CollapseDim",
+    "CollapseMode",
+    "SampleTime"
+   ],
+   "values":[
+    "round",
+    "|++",
+    "off",
+    "Inherit: Same as first input",
+    "[]",
+    "[]",
+    "Inherit: Same as first input",
+    "off",
+    "Simplest",
+    "off",
+    "1",
+    "All dimensions",
+    "-1"
+   ],
+   "tabs":[
+    "Main",
+    "Signal Attributes",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    2,
+    10
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Sum",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10455:2787",
+  "className":"Simulink.DataTypeConversion",
+  "icon":"WebViewIcon3",
+  "name":"Data Type Conversion1",
+  "label":"Data Type Conversion1",
+  "parent":"BLDCmotor_FOC_R2017b_fixdt:10455:2779",
+  "inspector":{
+   "params":[
+    "OutMin",
+    "OutMax",
+    "OutDataTypeStr",
+    "LockScale",
+    "ConvertRealWorld",
+    "RndMeth",
+    "SaturateOnIntegerOverflow",
+    "SampleTime"
+   ],
+   "values":[
+    "[]",
+    "[]",
+    "fixdt(1,16,4)",
+    "off",
+    "Real World Value (RWV)",
+    "Floor",
+    "off",
+    "-1"
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"DataTypeConversion",
+   "masktype":""
+  }
+ },
+ {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:10455:2790",
   "className":"Simulink.Outport",
   "icon":"WebViewIcon3",
@@ -80,99 +186,61 @@
   }
  },
  {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10455:2787",
-  "className":"Simulink.DataTypeConversion",
+  "sid":"BLDCmotor_FOC_R2017b_fixdt:10455:2908",
+  "className":"Simulink.Delay",
   "icon":"WebViewIcon3",
-  "name":"Data Type Conversion1",
-  "label":"Data Type Conversion1",
+  "name":"Resettable Delay",
+  "label":"Resettable Delay",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:10455:2779",
   "inspector":{
    "params":[
-    "OutMin",
-    "OutMax",
-    "OutDataTypeStr",
-    "LockScale",
-    "ConvertRealWorld",
-    "RndMeth",
-    "SaturateOnIntegerOverflow",
-    "SampleTime"
+    "DelayLengthSource",
+    "InitialConditionSource",
+    "DelayLength",
+    "InputProcessing",
+    "UseCircularBuffer",
+    "ShowEnablePort",
+    "ExternalReset",
+    "SampleTime",
+    "CodeGenStateStorageTypeQualifier",
+    "DelayLengthUpperLimit",
+    "DiagnosticForDelayLength",
+    "InitialCondition",
+    "PreventDirectFeedthrough",
+    "RemoveDelayLengthCheckInGeneratedCode",
+    "StateMustResolveToSignalObject",
+    "StateName",
+    "StateSignalObject",
+    "StateStorageClass"
    ],
    "values":[
-    "[]",
-    "[]",
-    "fixdt(1,16,4)",
-    "off",
-    "Real World Value (RWV)",
-    "Floor",
-    "off",
-    "-1"
-   ],
-   "tabs":[
-    "Parameter Attributes",
-    "-Other"
-   ],
-   "tabs_idx":[
-    0,
-    7
-   ]
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"DataTypeConversion",
-   "masktype":""
-  }
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10455:2788",
-  "className":"Simulink.Sum",
-  "icon":"WebViewIcon3",
-  "name":"Sum1",
-  "label":"Sum1",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:10455:2779",
-  "inspector":{
-   "params":[
-    "IconShape",
-    "Inputs",
-    "InputSameDT",
-    "AccumDataTypeStr",
-    "OutMin",
-    "OutMax",
-    "OutDataTypeStr",
-    "LockScale",
-    "RndMeth",
-    "SaturateOnIntegerOverflow",
-    "CollapseDim",
-    "CollapseMode",
-    "SampleTime"
-   ],
-   "values":[
-    "round",
-    "|++",
-    "off",
-    "Inherit: Same as first input",
-    "[]",
-    "[]",
-    "Inherit: Same as first input",
-    "off",
-    "Simplest",
-    "off",
+    "Dialog",
+    "Input port",
     "1",
-    "All dimensions",
-    "-1"
+    "Elements as channels (sample based)",
+    "off",
+    "off",
+    "None",
+    "-1",
+    "",
+    "100",
+    "None",
+    "0.0",
+    "off",
+    "off",
+    "off",
+    "",
+    [
+    ],
+    "Auto"
    ],
    "tabs":[
     "Main",
-    "Signal Attributes",
     "-Other"
    ],
    "tabs_idx":[
     0,
-    2,
-    10
+    8
    ]
   },
   "viewer":{
@@ -181,7 +249,7 @@
   "obj_viewer":[
   ],
   "finder":{
-   "blocktype":"Sum",
+   "blocktype":"Delay",
    "masktype":""
   }
  },
@@ -249,74 +317,6 @@
   ],
   "finder":{
    "blocktype":"Inport",
-   "masktype":""
-  }
- },
- {
-  "sid":"BLDCmotor_FOC_R2017b_fixdt:10455:2908",
-  "className":"Simulink.Delay",
-  "icon":"WebViewIcon3",
-  "name":"Resettable Delay",
-  "label":"Resettable Delay",
-  "parent":"BLDCmotor_FOC_R2017b_fixdt:10455:2779",
-  "inspector":{
-   "params":[
-    "DelayLengthSource",
-    "InitialConditionSource",
-    "DelayLength",
-    "InputProcessing",
-    "UseCircularBuffer",
-    "ShowEnablePort",
-    "ExternalReset",
-    "SampleTime",
-    "CodeGenStateStorageTypeQualifier",
-    "DelayLengthUpperLimit",
-    "DiagnosticForDelayLength",
-    "InitialCondition",
-    "PreventDirectFeedthrough",
-    "RemoveDelayLengthCheckInGeneratedCode",
-    "StateMustResolveToSignalObject",
-    "StateName",
-    "StateSignalObject",
-    "StateStorageClass"
-   ],
-   "values":[
-    "Dialog",
-    "Input port",
-    "1",
-    "Elements as channels (sample based)",
-    "off",
-    "off",
-    "None",
-    "-1",
-    "",
-    "100",
-    "None",
-    "0.0",
-    "off",
-    "off",
-    "off",
-    "",
-    [
-    ],
-    "Auto"
-   ],
-   "tabs":[
-    "Main",
-    "-Other"
-   ],
-   "tabs_idx":[
-    0,
-    8
-   ]
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"Delay",
    "masktype":""
   }
  },

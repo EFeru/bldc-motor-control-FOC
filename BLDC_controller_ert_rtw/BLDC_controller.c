@@ -5,7 +5,7 @@
  *
  * Model version                  : 1.1284
  * Simulink Coder version         : 8.13 (R2017b) 24-Jul-2017
- * C/C++ source code generated on : Sun Oct 11 20:20:20 2020
+ * C/C++ source code generated on : Sun Oct 11 21:38:56 2020
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -998,12 +998,12 @@ void BLDC_controller_step(RT_MODEL *const rtM)
   int16_T rtb_Abs5;
   int16_T rtb_DataTypeConversion2;
   int16_T rtb_Switch1_l;
+  int16_T rtb_Saturation;
   int16_T rtb_Saturation1;
-  int16_T rtb_Divide2_h;
   int16_T rtb_Merge;
   int16_T rtb_Switch2_l;
-  int32_T rtb_DataTypeConversion;
   int16_T rtb_toNegative;
+  int32_T rtb_DataTypeConversion;
   int32_T rtb_Switch1;
   int32_T rtb_Sum1;
   int32_T rtb_Gain3;
@@ -1672,11 +1672,11 @@ void BLDC_controller_step(RT_MODEL *const rtM)
    */
   rtb_Gain3 = rtU->i_phaAB << 4;
   if (rtb_Gain3 >= 27200) {
-    rtb_Merge = 27200;
+    rtb_Saturation = 27200;
   } else if (rtb_Gain3 <= -27200) {
-    rtb_Merge = -27200;
+    rtb_Saturation = -27200;
   } else {
-    rtb_Merge = (int16_T)(rtU->i_phaAB << 4);
+    rtb_Saturation = (int16_T)(rtU->i_phaAB << 4);
   }
 
   /* End of Saturate: '<S1>/Saturation' */
@@ -1698,8 +1698,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
   /* If: '<S2>/If1' incorporates:
    *  Constant: '<S2>/b_angleMeasEna'
    */
-  switch ((int8_T)rtP->b_angleMeasEna) {
-   case 0:
+  if (!rtP->b_angleMeasEna) {
     /* Outputs for IfAction SubSystem: '<S2>/F01_05_Electrical_Angle_Estimation' incorporates:
      *  ActionPort: '<S13>/Action Port'
      */
@@ -1713,9 +1712,9 @@ void BLDC_controller_step(RT_MODEL *const rtM)
      */
     if (rtb_LogicalOperator) {
       /* MinMax: '<S13>/MinMax' */
-      rtb_Divide2_h = rtb_Switch1_l;
-      if (!(rtb_Divide2_h < rtDW->z_counterRawPrev)) {
-        rtb_Divide2_h = rtDW->z_counterRawPrev;
+      rtb_Merge = rtb_Switch1_l;
+      if (!(rtb_Merge < rtDW->z_counterRawPrev)) {
+        rtb_Merge = rtDW->z_counterRawPrev;
       }
 
       /* End of MinMax: '<S13>/MinMax' */
@@ -1733,7 +1732,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
         rtb_Sum2_h = (int8_T)(rtConstP.vec_hallToPos_Value[rtb_Sum] + 1);
       }
 
-      rtb_Divide2_h = (int16_T)(((int16_T)((int16_T)((rtb_Divide2_h << 14) /
+      rtb_Merge = (int16_T)(((int16_T)((int16_T)((rtb_Merge << 14) /
         rtDW->z_counterRawPrev) * rtDW->Switch2_e) + (rtb_Sum2_h << 14)) >> 2);
     } else {
       if (rtDW->Switch2_e == 1) {
@@ -1751,7 +1750,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
         rtb_Sum2_h = (int8_T)(rtConstP.vec_hallToPos_Value[rtb_Sum] + 1);
       }
 
-      rtb_Divide2_h = (int16_T)(rtb_Sum2_h << 12);
+      rtb_Merge = (int16_T)(rtb_Sum2_h << 12);
     }
 
     /* End of Switch: '<S13>/Switch2' */
@@ -1759,8 +1758,8 @@ void BLDC_controller_step(RT_MODEL *const rtM)
     /* MinMax: '<S13>/MinMax1' incorporates:
      *  Constant: '<S13>/Constant1'
      */
-    if (!(rtb_Divide2_h > 0)) {
-      rtb_Divide2_h = 0;
+    if (!(rtb_Merge > 0)) {
+      rtb_Merge = 0;
     }
 
     /* End of MinMax: '<S13>/MinMax1' */
@@ -1768,12 +1767,10 @@ void BLDC_controller_step(RT_MODEL *const rtM)
     /* SignalConversion: '<S13>/Signal Conversion2' incorporates:
      *  Product: '<S13>/Divide2'
      */
-    rtb_Divide2_h = (int16_T)((15 * rtb_Divide2_h) >> 4);
+    rtb_Merge = (int16_T)((15 * rtb_Merge) >> 4);
 
     /* End of Outputs for SubSystem: '<S2>/F01_05_Electrical_Angle_Estimation' */
-    break;
-
-   case 1:
+  } else {
     /* Outputs for IfAction SubSystem: '<S2>/F01_06_Electrical_Angle_Measurement' incorporates:
      *  ActionPort: '<S14>/Action Port'
      */
@@ -1791,12 +1788,10 @@ void BLDC_controller_step(RT_MODEL *const rtM)
      *  Product: '<S18>/Divide3'
      *  Sum: '<S18>/Sum3'
      */
-    rtb_Divide2_h = (int16_T)((int16_T)(rtb_DataTypeConversion - ((int16_T)
-      ((int16_T)div_nde_s32_floor(rtb_DataTypeConversion, 5760) * 360) << 4)) <<
-      2);
+    rtb_Merge = (int16_T)((int16_T)(rtb_DataTypeConversion - ((int16_T)((int16_T)
+      div_nde_s32_floor(rtb_DataTypeConversion, 5760) * 360) << 4)) << 2);
 
     /* End of Outputs for SubSystem: '<S2>/F01_06_Electrical_Angle_Measurement' */
-    break;
   }
 
   /* End of If: '<S2>/If1' */
@@ -1903,13 +1898,13 @@ void BLDC_controller_step(RT_MODEL *const rtM)
   /* If: '<S1>/If1' incorporates:
    *  Constant: '<S1>/z_ctrlTypSel'
    */
-  rtb_Sum2_h = rtDW->If1_ActiveSubsystem_p;
+  rtb_Sum2_h = rtDW->If1_ActiveSubsystem;
   UnitDelay3 = -1;
   if (rtP->z_ctrlTypSel == 2) {
     UnitDelay3 = 0;
   }
 
-  rtDW->If1_ActiveSubsystem_p = UnitDelay3;
+  rtDW->If1_ActiveSubsystem = UnitDelay3;
   if ((rtb_Sum2_h != UnitDelay3) && (rtb_Sum2_h == 0)) {
     /* Disable for If: '<S6>/If2' */
     if (rtDW->If2_ActiveSubsystem_a == 0) {
@@ -1982,7 +1977,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
        *  ActionPort: '<S50>/Action Port'
        */
       /* Gain: '<S50>/Gain4' */
-      rtb_Gain3 = 18919 * rtb_Merge;
+      rtb_Gain3 = 18919 * rtb_Saturation;
 
       /* Gain: '<S50>/Gain2' */
       rtb_DataTypeConversion = 18919 * rtb_Saturation1;
@@ -2011,7 +2006,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
        *  ActionPort: '<S52>/Action Port'
        */
       /* Sum: '<S52>/Sum3' */
-      rtb_Gain3 = rtb_Merge - rtb_Saturation1;
+      rtb_Gain3 = rtb_Saturation - rtb_Saturation1;
       if (rtb_Gain3 > 32767) {
         rtb_Gain3 = 32767;
       } else {
@@ -2028,7 +2023,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
         rtb_Gain3) >> 15);
 
       /* Sum: '<S52>/Sum1' */
-      rtb_Gain3 = -rtb_Merge - rtb_Saturation1;
+      rtb_Gain3 = -rtb_Saturation - rtb_Saturation1;
       if (rtb_Gain3 > 32767) {
         rtb_Gain3 = 32767;
       } else {
@@ -2037,7 +2032,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
         }
       }
 
-      rtb_Merge = (int16_T)rtb_Gain3;
+      rtb_Saturation = (int16_T)rtb_Gain3;
 
       /* End of Sum: '<S52>/Sum1' */
       /* End of Outputs for SubSystem: '<S42>/Clarke_PhasesBC' */
@@ -2046,7 +2041,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
        *  ActionPort: '<S51>/Action Port'
        */
       /* Gain: '<S51>/Gain4' */
-      rtb_Gain3 = 18919 * rtb_Merge;
+      rtb_Gain3 = 18919 * rtb_Saturation;
 
       /* Gain: '<S51>/Gain2' */
       rtb_DataTypeConversion = 18919 * rtb_Saturation1;
@@ -2075,7 +2070,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
     /* End of If: '<S42>/If1' */
 
     /* PreLookup: '<S49>/a_elecAngle_XA' */
-    rtb_Sum_l = plook_u8s16_evencka(rtb_Divide2_h, 0, 128U, 180U);
+    rtb_Sum_l = plook_u8s16_evencka(rtb_Merge, 0, 128U, 180U);
 
     /* If: '<S6>/If2' incorporates:
      *  Constant: '<S43>/cf_currFilt'
@@ -2119,7 +2114,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
        *  Product: '<S48>/Divide4'
        */
       rtb_Gain3 = (int16_T)((rtb_DataTypeConversion2 *
-        rtConstP.r_cos_M1_Table[rtb_Sum_l]) >> 14) - (int16_T)((rtb_Merge *
+        rtConstP.r_cos_M1_Table[rtb_Sum_l]) >> 14) - (int16_T)((rtb_Saturation *
         rtConstP.r_sin_M1_Table[rtb_Sum_l]) >> 14);
       if (rtb_Gain3 > 32767) {
         rtb_Gain3 = 32767;
@@ -2145,8 +2140,8 @@ void BLDC_controller_step(RT_MODEL *const rtM)
        *  Product: '<S48>/Divide2'
        *  Product: '<S48>/Divide3'
        */
-      rtb_Gain3 = (int16_T)((rtb_Merge * rtConstP.r_cos_M1_Table[rtb_Sum_l]) >>
-                            14) + (int16_T)((rtb_DataTypeConversion2 *
+      rtb_Gain3 = (int16_T)((rtb_Saturation * rtConstP.r_cos_M1_Table[rtb_Sum_l])
+                            >> 14) + (int16_T)((rtb_DataTypeConversion2 *
         rtConstP.r_sin_M1_Table[rtb_Sum_l]) >> 14);
       if (rtb_Gain3 > 32767) {
         rtb_Gain3 = 32767;
@@ -2465,17 +2460,17 @@ void BLDC_controller_step(RT_MODEL *const rtM)
         /* End of Signum: '<S58>/SignDeltaU2' */
 
         /* Product: '<S58>/Divide1' */
-        rtb_Merge = (int16_T)(rtb_Switch2_l * rtb_Merge_f_idx_2);
+        rtb_Saturation = (int16_T)(rtb_Switch2_l * rtb_Merge_f_idx_2);
 
         /* Switch: '<S73>/Switch2' incorporates:
          *  RelationalOperator: '<S73>/LowerRelop1'
          *  RelationalOperator: '<S73>/UpperRelop'
          *  Switch: '<S73>/Switch'
          */
-        if (rtb_Merge > rtDW->Vq_max_M1) {
+        if (rtb_Saturation > rtDW->Vq_max_M1) {
           /* SignalConversion: '<S58>/Signal Conversion2' */
           rtDW->Merge = rtDW->Vq_max_M1;
-        } else if (rtb_Merge < rtDW->Gain5) {
+        } else if (rtb_Saturation < rtDW->Gain5) {
           /* Switch: '<S73>/Switch' incorporates:
            *  SignalConversion: '<S58>/Signal Conversion2'
            */
@@ -2484,7 +2479,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
           /* SignalConversion: '<S58>/Signal Conversion2' incorporates:
            *  Switch: '<S73>/Switch'
            */
-          rtDW->Merge = rtb_Merge;
+          rtDW->Merge = rtb_Saturation;
         }
 
         /* End of Switch: '<S73>/Switch2' */
@@ -2513,18 +2508,18 @@ void BLDC_controller_step(RT_MODEL *const rtM)
         /* DataTypeConversion: '<S55>/Data Type Conversion2' incorporates:
          *  Constant: '<S55>/n_cruiseMotTgt'
          */
-        rtb_Merge = (int16_T)(rtP->n_cruiseMotTgt << 4);
+        rtb_Saturation = (int16_T)(rtP->n_cruiseMotTgt << 4);
 
         /* Switch: '<S55>/Switch4' incorporates:
          *  Constant: '<S1>/b_cruiseCtrlEna'
          *  Logic: '<S55>/Logical Operator1'
          *  RelationalOperator: '<S55>/Relational Operator3'
          */
-        if (rtP->b_cruiseCtrlEna && (rtb_Merge != 0)) {
+        if (rtP->b_cruiseCtrlEna && (rtb_Saturation != 0)) {
           /* Switch: '<S55>/Switch3' incorporates:
            *  MinMax: '<S55>/MinMax4'
            */
-          if (rtb_Merge > 0) {
+          if (rtb_Saturation > 0) {
             rtb_TmpSignalConversionAtLow_Pa[0] = rtDW->Vq_max_M1;
 
             /* MinMax: '<S55>/MinMax3' */
@@ -2558,13 +2553,13 @@ void BLDC_controller_step(RT_MODEL *const rtM)
          *  Constant: '<S1>/b_cruiseCtrlEna'
          */
         if (!rtP->b_cruiseCtrlEna) {
-          rtb_Merge = rtDW->Merge1;
+          rtb_Saturation = rtDW->Merge1;
         }
 
         /* End of Switch: '<S55>/Switch2' */
 
         /* Sum: '<S55>/Sum3' */
-        rtb_Gain3 = rtb_Merge - rtb_Switch2_k;
+        rtb_Gain3 = rtb_Saturation - rtb_Switch2_k;
         if (rtb_Gain3 > 32767) {
           rtb_Gain3 = 32767;
         } else {
@@ -2604,7 +2599,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
          *  ActionPort: '<S56>/Action Port'
          */
         /* Gain: '<S56>/Gain4' */
-        rtb_Merge = (int16_T)-rtDW->Switch2;
+        rtb_Saturation = (int16_T)-rtDW->Switch2;
 
         /* Switch: '<S64>/Switch2' incorporates:
          *  RelationalOperator: '<S64>/LowerRelop1'
@@ -2642,8 +2637,8 @@ void BLDC_controller_step(RT_MODEL *const rtM)
         /* End of MinMax: '<S56>/MinMax1' */
 
         /* MinMax: '<S56>/MinMax2' */
-        if (!(rtb_Merge > rtDW->Gain5)) {
-          rtb_Merge = rtDW->Gain5;
+        if (!(rtb_Saturation > rtDW->Gain5)) {
+          rtb_Saturation = rtDW->Gain5;
         }
 
         /* End of MinMax: '<S56>/MinMax2' */
@@ -2651,7 +2646,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
         /* Outputs for Atomic SubSystem: '<S56>/PI_clamp_fixdt' */
         rtDW->Merge = (int16_T) PI_clamp_fixdt_a((int16_T)rtb_Gain3,
           rtP->cf_iqKp, rtP->cf_iqKi, rtDW->UnitDelay4_DSTATE_eu,
-          rtb_Merge_f_idx_2, rtb_Merge, 0, &rtDW->PI_clamp_fixdt_at);
+          rtb_Merge_f_idx_2, rtb_Saturation, 0, &rtDW->PI_clamp_fixdt_at);
 
         /* End of Outputs for SubSystem: '<S56>/PI_clamp_fixdt' */
 
@@ -2761,20 +2756,20 @@ void BLDC_controller_step(RT_MODEL *const rtM)
      *  Sum: '<S45>/Sum6'
      *  Sum: '<S46>/Sum6'
      */
-    rtb_Merge = (int16_T)rtb_Gain3;
+    rtb_Saturation = (int16_T)rtb_Gain3;
     if (!((int16_T)rtb_Gain3 > (int16_T)rtb_DataTypeConversion)) {
-      rtb_Merge = (int16_T)rtb_DataTypeConversion;
+      rtb_Saturation = (int16_T)rtb_DataTypeConversion;
     }
 
-    if (!(rtb_Merge > (int16_T)rtb_Switch1)) {
-      rtb_Merge = (int16_T)rtb_Switch1;
+    if (!(rtb_Saturation > (int16_T)rtb_Switch1)) {
+      rtb_Saturation = (int16_T)rtb_Switch1;
     }
 
     /* Sum: '<S45>/Add' incorporates:
      *  MinMax: '<S45>/MinMax1'
      *  MinMax: '<S45>/MinMax2'
      */
-    rtb_Sum1 = rtb_Switch2_l + rtb_Merge;
+    rtb_Sum1 = rtb_Switch2_l + rtb_Saturation;
     if (rtb_Sum1 > 32767) {
       rtb_Sum1 = 32767;
     } else {
@@ -2853,9 +2848,9 @@ void BLDC_controller_step(RT_MODEL *const rtM)
    *  RelationalOperator: '<S7>/Relational Operator6'
    */
   if (rtP->z_ctrlTypSel == 2) {
-    rtb_Merge = rtDW->Merge;
+    rtb_Saturation = rtDW->Merge;
   } else {
-    rtb_Merge = rtDW->Merge1;
+    rtb_Saturation = rtDW->Merge1;
   }
 
   /* End of Switch: '<S7>/Switch2' */
@@ -2900,11 +2895,11 @@ void BLDC_controller_step(RT_MODEL *const rtM)
        *  Product: '<S90>/Product2'
        */
       rtb_Saturation1 = (int16_T)((int16_T)((int16_T)(rtDW->Divide3 *
-        rtDW->Switch2_e) << 2) + rtb_Divide2_h);
+        rtDW->Switch2_e) << 2) + rtb_Merge);
       rtb_Saturation1 -= (int16_T)((int16_T)((int16_T)div_nde_s32_floor
         (rtb_Saturation1, 23040) * 360) << 6);
     } else {
-      rtb_Saturation1 = rtb_Divide2_h;
+      rtb_Saturation1 = rtb_Merge;
     }
 
     /* End of Switch: '<S90>/Switch_PhaAdv' */
@@ -2917,11 +2912,11 @@ void BLDC_controller_step(RT_MODEL *const rtM)
      *  Interpolation_n-D: '<S89>/r_sin3PhaB_M1'
      *  Interpolation_n-D: '<S89>/r_sin3PhaC_M1'
      */
-    rtb_DataTypeConversion2 = (int16_T)((rtb_Merge *
+    rtb_DataTypeConversion2 = (int16_T)((rtb_Saturation *
       rtConstP.r_sin3PhaA_M1_Table[rtb_Sum]) >> 14);
-    rtb_Saturation1 = (int16_T)((rtb_Merge *
+    rtb_Saturation1 = (int16_T)((rtb_Saturation *
       rtConstP.r_sin3PhaB_M1_Table[rtb_Sum]) >> 14);
-    rtb_Merge_f_idx_2 = (int16_T)((rtb_Merge *
+    rtb_Merge_f_idx_2 = (int16_T)((rtb_Saturation *
       rtConstP.r_sin3PhaC_M1_Table[rtb_Sum]) >> 14);
 
     /* End of Outputs for SubSystem: '<S7>/SIN_Method' */
@@ -2969,12 +2964,12 @@ void BLDC_controller_step(RT_MODEL *const rtM)
      * About '<S87>/z_commutMap_M1':
      *  2-dimensional Direct Look-Up returning a Column
      */
-    rtb_DataTypeConversion2 = (int16_T)(rtb_Merge *
+    rtb_DataTypeConversion2 = (int16_T)(rtb_Saturation *
       rtConstP.z_commutMap_M1_table[rtb_DataTypeConversion]);
     rtb_Saturation1 = (int16_T)(rtConstP.z_commutMap_M1_table[1 +
-      rtb_DataTypeConversion] * rtb_Merge);
+      rtb_DataTypeConversion] * rtb_Saturation);
     rtb_Merge_f_idx_2 = (int16_T)(rtConstP.z_commutMap_M1_table[2 +
-      rtb_DataTypeConversion] * rtb_Merge);
+      rtb_DataTypeConversion] * rtb_Saturation);
 
     /* End of Outputs for SubSystem: '<S7>/COM_Method' */
   }
@@ -3018,7 +3013,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
   rtDW->UnitDelay2_DSTATE_g = rtDW->UnitDelay6_DSTATE;
 
   /* Update for UnitDelay: '<S7>/UnitDelay4' */
-  rtDW->UnitDelay4_DSTATE_eu = rtb_Merge;
+  rtDW->UnitDelay4_DSTATE_eu = rtb_Saturation;
 
   /* Update for UnitDelay: '<S8>/UnitDelay5' */
   rtDW->UnitDelay5_DSTATE_l = rtb_RelationalOperator4_d;
@@ -3036,13 +3031,12 @@ void BLDC_controller_step(RT_MODEL *const rtM)
    */
   rtY->n_mot = (int16_T)(rtb_Switch2_k >> 4);
 
+  /* Outport: '<Root>/a_elecAngle' incorporates:
+   *  DataTypeConversion: '<S1>/Data Type Conversion3'
+   */
+  rtY->a_elecAngle = (int16_T)(rtb_Merge >> 6);
+
   /* End of Outputs for SubSystem: '<Root>/BLDC_controller' */
-
-  /* Outport: '<Root>/n_motHiRes' */
-  rtY->n_motHiRes = rtb_Switch2_k;
-
-  /* Outport: '<Root>/a_elecAngle' */
-  rtY->a_elecAngle = rtb_Divide2_h;
 
   /* Outport: '<Root>/iq' */
   rtY->iq = rtDW->DataTypeConversion[0];
@@ -3068,7 +3062,7 @@ void BLDC_controller_initialize(RT_MODEL *const rtM)
   /* End of Start for SubSystem: '<S1>/F03_Control_Mode_Manager' */
 
   /* Start for If: '<S1>/If1' */
-  rtDW->If1_ActiveSubsystem_p = -1;
+  rtDW->If1_ActiveSubsystem = -1;
 
   /* Start for IfAction SubSystem: '<S1>/F05_Field_Oriented_Control' */
   /* Start for If: '<S6>/If2' */

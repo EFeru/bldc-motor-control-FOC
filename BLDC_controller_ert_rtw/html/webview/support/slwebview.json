@@ -8,7 +8,7 @@
    "sid":"BLDCmotor_FOC_R2017b_fixdt",
    "name":"BLDCmotor_FOC_R2017b_fixdt",
    "fullname":"BLDCmotor_FOC_R2017b_fixdt",
-   "label":"BLDCmotor_FOC_R2017b_fixdt",
+   "label":"BLDCmotor_FOC_R2017b_fixdt*",
    "parent":0,
    "descendants":[
     2,

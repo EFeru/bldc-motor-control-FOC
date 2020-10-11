@@ -63,7 +63,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:10507:9">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,224,329)">
-            <image height="68" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABECAYAAADtAUf/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABQklEQVRoge2asU7DMBCGv6DQpSssXTrxMqw8K08DDCxdksEM6ZAMZfBFGEgqX1UjI/2fdDorOsmfLokXXwM8AffAneWSdEBvOY3+Z2FrMrskSrIFNraegCPwsVTYEju1A/YWJbm1PAIDEJJnv8Tmju2Bh8JiEDs1EDvVrYnd/IHIRUjMi8S8SMxLtWJtRs0z0FjkcAIeLzYycsReyZe6Gv9a7IVKxart2FtxiwWqPS4k5kViXiTmpVqxnAP2VNxigWo7JjEvEvMiMS8S8yIxLxLzIjEvEvMiMS8S8yIxLxLzIjEvEvNSrVhLvMnfsnKbf2XegYPtGYhzF9OaWM/3IY2SHCx64njDWbHO1vOQRknSEZpg+43nxNIhjZIE2yOQ8So7Kwh8da8UR4shyYtiDXG2Z0P8+Ev/AJPFmKznEEIAfAI2G0pqzZ9XeAAAAABJRU5ErkJggg==" y="0"/>
+            <image height="68" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABECAYAAADtAUf/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXElEQVRoge2asU7DMBCGv6DQpSssXTrxMLDyrPAywMDSJRnMkA7p0A6+CBeSyhd6xZXuk062Ilf+9Cd1hlwFPAP3wJ2MljRAK2Na7c+FtciskrJkCSxkvgO2wNfYwpqY1ApYS1lyK2MPdEBIrv0SGxJbAw/GYhCT6ohJNVNiNxcQmYWLaXExLS6mpVixOmPNC1BJ5bAHnmYbCTli7+RLnY2rFnujULFiE/swtxih2OPCxbS4mBYX01KsWM4B+2puMULuu1LL44zfHJH7rrw4Von9matO7F/Eij0uXEyLi2lxMS3FiuUcsHtzixGKTczFtLiYFhfT4mJaXEyLi2lxMS3FitXEL/lLJr7mn5lPYCN7BmLfxW5KrOW4ScOSjVRLbG84KdbIfGjSsCRtoQmyX39KLG3SsCTIHoGMW9nIgsB3elZspbpkHBWriL09C+LDb/0H2En1yXwox3EADvGkT7/7fQMEAAAAAElFTkSuQmCC" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,225,330)">
             <path d="M0,0 L30,0 L30,60 L0,60 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -142,7 +142,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:10507:8">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,964,42)">
-            <image height="162" preserveAspectRatio="none" width="63" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAACiCAYAAAD2pxVCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC3ElEQVR4nO2dvXLiMBSFDzsmTdqkoaHKw+y2+xz7MvsueRrYYps0oTAFFLhICokZxyMmAl/ZV5zzzWjMj8b4m2tsCUmXBYDfAJ4BPMVt7bwD2MVtv+yGFRsE4VWv1M4jgIf4uANwBLBPVWwQIr4CsI6ldpZxewJwAND2XvtCP/JrAC9THN0EdAjie4RTPin/Y8oj8obkWZE8K5JnhVq+yajzCmARSw4fAH5deG8DYJvYbjP3a0qO/Bb54iXZDJ6Pbo3WJD88OyaR38CH/DDyP8fusObIjyZH/p/1h97IMPKjyZH3wiyR94K5PHUjR/KsSJ4VavmcW515b8oLinwl/LHeYU3yattbQi1PfcGTPCuSZ0XyrFDL19TIMe9dUkde8qxInhXJsyJ5ViTPiuRZkTwr1PK5MzCt+A/gDWHFU4uw5q0z3P9V5M7AtOItlh3Csi/38paR7y/1bBHWvp0M938VU0e+RYh4i0pOe8vIH2M59Lau5S0j38Vy6j2mkXcF9X1e8qxInhXJs0ItX3LW9Zh1s5NQsm3vqu+eomTz1lXfPUXJyLvqu6coGXlXffcUJSPvqu+eomTkXfXdU6g/z4rkWZE8K5JnhVq+1Hz7S78BuOrjU0de8qxYyVeZXUGRZ8Xyp+vqTn3qyEueFcmzInlWSo3YlPhvjNkyHl9LCfnZMh5fy+hsxAlmy3jsgVlyY5lnI7uRWbKiUUf+buWp7/OSZ0XyrEieFWp5q1HaD5T/xxNlRbOEWl4jNqxInhXJsyJ5VmoasTGnphEbc3LkS4y+uID6Oy95ViTPiuRZUQvvG6hbeF7m5JhT0+QEc3Lk/xp+3kssLs4M6qu95FmRPCuSZ6VByF31CGA587FYkZ2NrUFI3vUQn7vKYHQj2dnYzpEHQhqnwxRHV5jsbGxn+S5W2k90gCXJzsZ2lj/Giu+pSpWRnY1tAeAJ4Tu/xH1c9C5lY7uH65kQQtzGJ39t1u/8qwizAAAAAElFTkSuQmCC" y="0"/>
+            <image height="162" preserveAspectRatio="none" width="63" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAACiCAYAAAD2pxVCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzElEQVR4nO2dsVLCQBRFL06wsdXGxsqP0dbv8Gf4F/0ZsLCxkSIUUJACi11mYgaGR3jZ7HLvmdkJ6JLsmReSTTb7mAB4A/AA4D4uS+cXwDIu22XZrVghCD+2SuncAbiNrxsAGwCrQxUrhIg/AniKpXSmcbkFsAZQt/72j3bknwA8p2hdAhoE8RXCLn9Q/iZli3JD8qxInhXJs0ItXxnqfACYxGJhB+D1yP/mABYHlgvDet8772fG9hzFIr+AXXxI5t4rLEnesnechUV+DmL5XCLvjkX+a/BW2Nh5r5D6VCd5ViTPiuRZsZznc6Hbt7/4TrNF/vPSjTjR7d4mke9zNfXS4zOn6Lbj4m1Y+/Y5MNpVXQ6Mdj2fA6Nd0uaAezuoz/OSZ0XyrEieFWp5SyfH/ZZxT3Tr2hPJsyJ5ViTPiuRZkTwrkmdF8qxQy6ceq/sG8IMw46lGmPPWOK7/LFIPV/3EskSY9pW9vGfk21M9a4S5b1vH9Z9F6sjXCBGvUchu7xn5TSzr1jJrec/IN7FsW69p5LOC+jwveVYkz4rkWaGWTz0+f8lcWneG6tsXkXVlqO7t1cjn8ry9O9QXNiU9b++OIn+Cq5Wn7uRInhXJsyJ5ViTPiuRZkbwDuczDOQtFnhXPW9fF7frUkZc8K5JnRfKslDRKO0pWtFxGaZUVzXMbJQ1XKSuaJ4p86o32RFnRPJE8K5JnRfKsUMt7JfreYfhfPFFWNE+o5TViw4rkWZE8K5JnpaQRG3dKGrFxxyJfxBy5PlB/5yXPiuRZkTwr6uGdgLqHl8szOe6U9HCCOxb5meP2nmPJYs+gPtpLnhXJsyJ5ViqEvNN3AKYjt8ULcyb1CiHx9m18P1r2YUfMmdT3kQdCCuZ1itYNjDmT+l6+iZVWiRo4JOZM6nv5Taz4e6hSYZgzqU8A3CN856e4joPesUzq13A8E0KIfvwB1te0M6Z/MysAAAAASUVORK5CYII=" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,965,43)">
             <path d="M0,0 L55,0 L55,154 L0,154 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -334,7 +334,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:10507:7">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,469,288)">
-            <image height="150" preserveAspectRatio="none" width="53" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAACWCAYAAAB+bsAwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZUlEQVR4nO2dsW7bMBRFjwslS9Z2yZIpH9Ou/dZ+TdyhS5Z4UIZ4sIdkII2qAV0wNknzMvcABI2ENnTwZEmP4DNXwE/gG/A19r3yBGxiv2yb9wMngsjtovXKDXAdX++BLfCcGjgRInQL3MXWK1ex3wEvwLz42z8sI3UH3Lc4ujPYE4SeCadeUupLyyNqhaVUsJQKllJhSKkpY8wvYBVbDq/AjyP/ewDWiX797v1nkSO1Jl+oCz6t1AMDSg0Zqd/Vj6IwQ17SLaWCpVSwlApDSuXcfM9+am7NkJGylAqWUsFSKlhKBUupYCkVLKWCpVSwlAqWUsFSKlhKBUupYCkVhpTKXfFSij/AI2Gl8kxYW74v+PlA/oqXUjzGtiEsw76YVMlILUsbZsIa813BzwfaR2omRGjmwqdfyUhtY3tZ9PLfqX1su8VreakmDHmfspQKllLBUioMKVVzFVlOXUcVaj77NcmdUtR8TGqSO6WoGakmuVOKmpFqkjulqBmpJrlTipqRapI7pXA+pYKlVLCUCpZSYUipnJvvKRzLwZrkWENGylIqlJLqqhrOkVKh5BRZN6fgkJGylAqWUsFSKtSaob3ob2/WmszsXuqUSH0/4T3FGHLaufUqsiZ82kjJSQ15n7KUCpZSwVIqWOo/dDM9Bo6UDp6hVcFSKlhKBUup4BnaD9C9VMnZ1vvYqs7gDvmdspQKllLBUipMhPqmG47sOdgR2ZVzE6Fwa7n9Za9kV84dIgV/t7/slezKuYPUcvvLXsmunDtIbePAp9SgTsiunFsRdom9Jlwoer5YHKuc6/k6YIzplTe+a8ADoEnT1QAAAABJRU5ErkJggg==" y="0"/>
+            <image height="150" preserveAspectRatio="none" width="53" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAACWCAYAAAB+bsAwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTUlEQVR4nO2dsW7bMBRFjwslS9Z0yZIpH5Ou/dbmZ+IOXbLEgzLEgz20A2lECeyArin6XeYegKBh04YOnkwKTxS5AH4C34HrXEflGVjlelpWHxsOJJGbSYnKFXCZX2+BNfCyr+FAitANcJtLVC5yvQFegXHy3jumkboF7loc3QlsSUIvpFNvr9S3lkfUCkupYCkVLKVCl1JDQZtfwCKXEv4CPw589ggs99TLD98/iRKpJeVCIfiyUo90KNVlpH7PfhSV6bJLt5QKllLBUip0KVUy+D7MfhSVKb32O5b7//hONUqv/aSYK1Jn5ctGSk6qyy7dUipYSgVLqdClVMnge3JuuzVdRspSKlhKBUupYCkVLKWCpVSwlApdSrXOpf8BnkgzlUfS3PJtxd8H2qedn3JZkaZhn02qZqSmjzaMpDnmm4q/D7SP1EiK0MiZT7+akVrn8jqp5f9T21w2k9fyUk3ocpyylAqWUsFSKnQp1fr+VMmzHicz17XfWZ9CnesyKbyU5/tFwPP9VOhSqsvB11IqWEoFS6lgKRUspYKlPiHUPFtHSoWaKbIwp2CXkbKUCpZSwVIq+K7HEYSX8l2PCPiuhwpdSnU5TllKBUupYCkVLPUJYdJj4Ejp4AytCpZSwVIqWEoFZ2iPILxUzWzrXS6zZnC7/E9ZSgVLqWApFQbS2hBXHNhzMBDFq44MpEUvpttfRqV41ZFdpOBt+8uoFK86spOabn8ZleJVR3ZS69zweV+jIBSvOrIg7RJ7SeooIncWh1YdidwPGGOi8g9xDJzBonvoQQAAAABJRU5ErkJggg==" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,470,289)">
             <path d="M0,0 L45,0 L45,142 L0,142 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -526,7 +526,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:10507:6">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,769,89)">
-            <image height="68" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABECAYAAADtAUf/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABQklEQVRoge2asU7DMBCGv6DQpSssXTrxMqw8K08DDCxdksEM6ZAMZfBFGEgqX1UjI/2fdDorOsmfLokXXwM8AffAneWSdEBvOY3+Z2FrMrskSrIFNraegCPwsVTYEju1A/YWJbm1PAIDEJJnv8Tmju2Bh8JiEDs1EDvVrYnd/IHIRUjMi8S8SMxLtWJtRs0z0FjkcAIeLzYycsReyZe6Gv9a7IVKxart2FtxiwWqPS4k5kViXiTmpVqxnAP2VNxigWo7JjEvEvMiMS8S8yIxLxLzIjEvEvMiMS8S8yIxLxLzIjEvEvNSrVhLvMnfsnKbf2XegYPtGYhzF9OaWM/3IY2SHCx64njDWbHO1vOQRknSEZpg+43nxNIhjZIE2yOQ8So7Kwh8da8UR4shyYtiDXG2Z0P8+Ev/AJPFmKznEEIAfAI2G0pqzZ9XeAAAAABJRU5ErkJggg==" y="0"/>
+            <image height="68" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABECAYAAADtAUf/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXElEQVRoge2asU7DMBCGv6DQpSssXTrxMLDyrPAywMDSJRnMkA7p0A6+CBeSyhd6xZXuk062Ilf+9Cd1hlwFPAP3wJ2MljRAK2Na7c+FtciskrJkCSxkvgO2wNfYwpqY1ApYS1lyK2MPdEBIrv0SGxJbAw/GYhCT6ohJNVNiNxcQmYWLaXExLS6mpVixOmPNC1BJ5bAHnmYbCTli7+RLnY2rFnujULFiE/swtxih2OPCxbS4mBYX01KsWM4B+2puMULuu1LL44zfHJH7rrw4Von9matO7F/Eij0uXEyLi2lxMS3FiuUcsHtzixGKTczFtLiYFhfT4mJaXEyLi2lxMS3FitXEL/lLJr7mn5lPYCN7BmLfxW5KrOW4ScOSjVRLbG84KdbIfGjSsCRtoQmyX39KLG3SsCTIHoGMW9nIgsB3elZspbpkHBWriL09C+LDb/0H2En1yXwox3EADvGkT7/7fQMEAAAAAElFTkSuQmCC" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,770,90)">
             <path d="M0,0 L30,0 L30,60 L0,60 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -605,7 +605,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:10507:5">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,689,209)">
-            <image height="68" preserveAspectRatio="none" width="58" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAABECAYAAADQkyaZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABZ0lEQVRoge2bPU/DQAxAX1Do0hWWLp36Y2Dlt/JrGgaWLslwHdohGWCwIw6UopNaQs7nJ1k+tVbrJ0fph+QKeAEegQfNOdECneY4up+FNSK3iSIn1sBKzwNwBo5ThTUyyQ2w1ciJe809cAJC9Ng34olugd0c3d2YAZE8IpftpOjdnB39Jy5qDRe1hotaoxjROqHmFag0UvgAni88tweaidwkvOZVpIg2pEsuFheN2FOIaDETffvzLmagmI8XF7WGi1rDRa1RjGjKF4arfzksgWIm6qLWcFFruKg1XNQaLmoNF7WGi1rDRa3hotZwUWsUI5ryd+ct2Wk8zfy+5UzURa3hotZwUWvUyGbBmgvbBQvnHTggDgHZexmmCmtk6ydeksmJg0aHrIP8KtrqeVySyYl4ZSsg/fdThaNovCSTEwHpOZBw6bZaEPiabi6cNU5RnhStkN20FXIzyu2GNGj00XkMx3Gc5fEJo0dR/z/PkgMAAAAASUVORK5CYII=" y="0"/>
+            <image height="68" preserveAspectRatio="none" width="58" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAABECAYAAADQkyaZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABgUlEQVRoge2bsU7DMBBAX1Do0hWWLp36MbDyrfAzDQNLl2Rwh3ZoBhjOEQa5yNAmxOd70slWe63u6aLEanUV8ATcA3d+zYkW6PwaRvc9sUbkVkHkxBJY+H0PHIF9LLFGOrkC1j5y4tavJ+AAuOC1L4QdXQObKaq7Mj0iuUcu26jozZQV/Scmqg0T1YaJaqMY0Toh5xmofKTwDjyeeW8LNJG1SfjOi0gRbUiXnC0mGrClENFiOvo6ehUTUMzjxUS1YaLaMFFtFCOacmB4Gb2KCUg96/6Whz98ZlRSz7rZM1ZHZ4d1NECFaDGPFxPVholqw0S1UYxoyoHh4v895kAxHTVRbZioNkxUG8WIphwYrsnGx+S/EhbTURPVholqw0S1USOTBUvOTBfMnDdghzg4ZO6ljyXWyNRPOCSTEzsfHTIO8qNo6/fDkExOhCNbDqn/FEscRMMhmZxwSM2OhEu39QmOz+7mwtHHIVijohUym7ZAbka53ZB6H6dgP4RhGMb8+ADTgldUBFhP7QAAAABJRU5ErkJggg==" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,690,210)">
             <path d="M0,0 L50,0 L50,60 L0,60 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -654,7 +654,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:10507:4">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,1089,229)">
-            <image height="48" preserveAspectRatio="none" width="48" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABR0lEQVRoge2ZMU7DQBBFn5FJkxaaNKlyGGi5GXfhNAkFTRq72BRJERehmLFYkI1WSuzZhXnSaFfOyPrfs46LXwEvwCPwoGsONECra1ztz8YaEb2KKgeWwEL3HXACDkONNfLkV8BaKwfudT0DRyBE174RT2ANbOZQl0iHiD8gx2fQwN2ciqbADVjjBqxxA9YUb6BO6HkDKq0ULsDzyG9bYBetr4n3HCXFwI508bPzLwxsKdxA8RN4n1zFFRT/N+oGrHED1rgBa4o3kPIhu0yu4gqKn0DxBlKO0C3ZaD3d6obFT8ANWOMGrHED1tRI+rFkJAEx4gPYI9oCkpF1Q401kvzFgVoO7LVaJGL61UCj+z5Qy4E4Zg2IrvNQY28gDtRyICBaAglHqNGGwNc0rDlpHaN10ECF5MQL5CXO5UXutM7Rvi/Hcf4Sn2gSTtcnW/utAAAAAElFTkSuQmCC" y="0"/>
+            <image height="48" preserveAspectRatio="none" width="48" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABU0lEQVRoge2ZsVLCQBCGvziRhlYbGioeRlvfzHeRlwELG5qkOAookkKL3YyHkzgnMbk73W9mZ29gYf6fy0GYvwCegHvgTnsKVECt3a/662CJiF55lQJLYKHrFjgDx77BEvnkV8BaKwVutTfACXDeYxf4O7AGNnOoC6RFxB+Ry6fXwM2ciqbADMTGDMTGDMQmewNlwMwLUGiF8A48Djy3A/Zefw58z0FCDOwJFz87/8LAjswNZL8Dr5OrGEH2X6NmIDZmIDZmIDbZGwj5IdtOrmIEofdCP+XhitdcRei9ULKEGBj9p8Njo/VrO5T9ITYDsTEDsTEDsSmR9GPJQAISiTfggGhzSEbW9g2WSPLnB2opcNCqkYjpWwOVrrtALQX8mNUhupq+wc6AH6ilgEO0OAIuoUoHHJ+7EZuz1snrvQYKJCdeIIc4lYPcajXeuivDMP4SH7t+USRqT17bAAAAAElFTkSuQmCC" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,1090,230)">
             <path d="M0,0 L40,0 L40,40 L0,40 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -1009,10 +1009,10 @@
           </g>
           <!--RAWSTRING-->
         </g>
-        <g clip-path="none" fill="#000000" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,430,105)">
+        <g clip-path="none" fill="#000000" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,170,105)">
           <path d="M2.5,0 C2.5,1.38071 1.38071,2.5 0,2.5 C-1.38071,2.5 -2.5,1.38071 -2.5,0 C-2.5,-1.38071 -1.38071,-2.5 0,-2.5 C1.38071,-2.5 2.5,-1.38071 2.5,0 z" fill-rule="evenodd" vector-effect="none"/>
         </g>
-        <g clip-path="none" fill="#000000" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,170,105)">
+        <g clip-path="none" fill="#000000" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,430,105)">
           <path d="M2.5,0 C2.5,1.38071 1.38071,2.5 0,2.5 C-1.38071,2.5 -2.5,1.38071 -2.5,0 C-2.5,-1.38071 -1.38071,-2.5 0,-2.5 C1.38071,-2.5 2.5,-1.38071 2.5,0 z" fill-rule="evenodd" vector-effect="none"/>
         </g>
         <g clip-path="none" fill="#000000" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,545,220)">
@@ -1103,10 +1103,10 @@
           </g>
           <!--RAWSTRING-->
         </g>
-        <g clip-path="none" fill="#000000" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,865,260)">
+        <g clip-path="none" fill="#000000" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,600,360)">
           <path d="M2.5,0 C2.5,1.38071 1.38071,2.5 0,2.5 C-1.38071,2.5 -2.5,1.38071 -2.5,0 C-2.5,-1.38071 -1.38071,-2.5 0,-2.5 C1.38071,-2.5 2.5,-1.38071 2.5,0 z" fill-rule="evenodd" vector-effect="none"/>
         </g>
-        <g clip-path="none" fill="#000000" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,600,360)">
+        <g clip-path="none" fill="#000000" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,865,260)">
           <path d="M2.5,0 C2.5,1.38071 1.38071,2.5 0,2.5 C-1.38071,2.5 -2.5,1.38071 -2.5,0 C-2.5,-1.38071 -1.38071,-2.5 0,-2.5 C1.38071,-2.5 2.5,-1.38071 2.5,0 z" fill-rule="evenodd" vector-effect="none"/>
         </g>
         <!--RAWSTRING-->
@@ -1176,5 +1176,5 @@
       <!--RAWSTRING-->
     </g>
   </g>
-  <!--generated on windows @ 2020-10-11 20:20:43 W. Europe Daylight Time-->
+  <!--generated on windows @ 2020-10-11 21:39:19 W. Europe Daylight Time-->
 </svg>
