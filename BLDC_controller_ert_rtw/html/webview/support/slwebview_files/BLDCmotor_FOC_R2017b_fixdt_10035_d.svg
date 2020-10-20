@@ -117,7 +117,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:10035:573">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,259,158)">
-            <image height="110" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABuCAYAAABLNmGvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABgklEQVR4nO3bMU/CQBjG8T+msrDqwsLkh3H24+viwtIOdYABBh3uJRwKpM/Vw5o8v+TSxpT2n1clMXgz4AV4BB7iWFMLdHHMV/f9wiZiltmqaQHM43wPbIGPcxc2pEktgVWsmu7juAM2QJ997UfYYWIr4KlyGKRJbUiTai+F3d0gpIjDVA5TOUw12bBmwDWzgvt+FrzmxGQn5jCVw1QOUzlM5TCVw1QOUzlM5TCVw1QOUzlM5TCVw1QOUzlM5TCVw1QOUzlM5TCVw1QOUzlM5TDVZMOGfFg/+oP3EpOdmMNUDlM5TDXkfey14L6j/zt0SNhbwX1vElYyseeC15yoNbHRak1stH89sT8Jm+z7mMNUDlM5TOUwlcNU/ktc5TCVw1QOUzWkPY4LLuxz/GXvwDqe2ZN2pO4vhXWcbl+taR2rI238vBrWxvlh+2pN+ebiPp63uxaWb1+tqY9n9Az4VrZxQc9xerVsY22y49mwGWnX85z0w1/7F2Afa5edH5aZAXwBy2hNB2BkAcsAAAAASUVORK5CYII=" y="0"/>
+            <image height="110" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABuCAYAAABLNmGvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXElEQVR4nO3bMW+CQBjG8T8NdXFtFxenfqJ+/6GLCwzXAQcY2uFe0rMV40N7DcPzSy4Qg/LPqRtvA7wCz8BTHGvqgD6O5eq/X9hGzKFYNe2BXZxPwBl4v3ZhS96pA3CMVdNjHEdgAFLx2o+weceOwEvlMMg7NZB3qlsKe/iHkFUcpnKYymGqzYa1d1zTrPjcjxXvubDZHXOYymEqh6kcpnKYymEqh6kcpnKYymEqh6kcpnKYymEqh6kcpnKYymEqh6kcpnKYymEqh6kcpnKYymEqh6kcpnKYymEqh6kcpnKYymEqh6kcpnKYymGqzYbd89j8rx+BX2OzO+YwlcNUDlO15BnHPQtzjn/sDTjFPRN5InVaCuu5HF+t6RSrJw9+3gzr4nweX62pHC5Ocb/xVlg5vlpTinsk7vgqu7gg8bV7tZxjDcXxalhDnnrekX/8tf8AU6yxOJ+XmQF8ApBRRWSeKub5AAAAAElFTkSuQmCC" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,260,159)">
             <path d="M0,0 L30,0 L30,102 L0,102 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -519,5 +519,5 @@
       <!--RAWSTRING-->
     </g>
   </g>
-  <!--generated on windows @ 2020-10-11 21:39:38 W. Europe Daylight Time-->
+  <!--generated on windows @ 2020-10-20 17:30:45 W. Europe Daylight Time-->
 </svg>

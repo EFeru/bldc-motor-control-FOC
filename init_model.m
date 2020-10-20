@@ -134,7 +134,7 @@ Vq_max_M1           = sqrt(Vd_max^2 - Vq_max_XA.^2);  % Circle limitations look-
 % stairs(Vq_max_XA, Vq_max_M1); legend('V_{max}');
 
 % Speed limitations
-n_max               = 1500;             % [rpm] Maximum motor speed: [-1500, 1500]
+n_max               = 1000;             % [rpm] Maximum motor speed: [-1500, 1500]
 
 % Current Limitations
 i_max               = 15;               % [A] Maximum allowed motor current (continuous)

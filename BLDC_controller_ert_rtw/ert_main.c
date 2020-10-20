@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'BLDC_controller'.
  *
- * Model version                  : 1.1284
+ * Model version                  : 1.1296
  * Simulink Coder version         : 8.13 (R2017b) 24-Jul-2017
- * C/C++ source code generated on : Sun Oct 11 21:38:56 2020
+ * C/C++ source code generated on : Tue Oct 20 17:29:57 2020
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -26,59 +26,59 @@ static RT_MODEL rtM_;
 static RT_MODEL *const rtMPtr = &rtM_; /* Real-time model */
 static P rtP = {
   /* Variable: dV_openRate
-   * Referenced by: '<S35>/dV_openRate'
+   * Referenced by: '<S37>/dV_openRate'
    */
   12288,
 
   /* Variable: dz_cntTrnsDetHi
-   * Referenced by: '<S16>/dz_cntTrnsDet'
+   * Referenced by: '<S17>/dz_cntTrnsDet'
    */
   40,
 
   /* Variable: dz_cntTrnsDetLo
-   * Referenced by: '<S16>/dz_cntTrnsDet'
+   * Referenced by: '<S17>/dz_cntTrnsDet'
    */
   20,
 
   /* Variable: n_cruiseMotTgt
-   * Referenced by: '<S55>/n_cruiseMotTgt'
+   * Referenced by: '<S61>/n_cruiseMotTgt'
    */
   0,
 
   /* Variable: z_maxCntRst
    * Referenced by:
-   *   '<S12>/Counter'
-   *   '<S12>/z_maxCntRst'
-   *   '<S12>/z_maxCntRst2'
-   *   '<S12>/UnitDelay3'
-   *   '<S16>/z_counter'
+   *   '<S13>/Counter'
+   *   '<S13>/z_maxCntRst'
+   *   '<S13>/z_maxCntRst2'
+   *   '<S13>/UnitDelay3'
+   *   '<S17>/z_counter'
    */
   2000,
 
   /* Variable: cf_speedCoef
-   * Referenced by: '<S16>/cf_speedCoef'
+   * Referenced by: '<S17>/cf_speedCoef'
    */
   10667U,
 
   /* Variable: t_errDequal
-   * Referenced by: '<S3>/t_errDequal'
+   * Referenced by: '<S20>/t_errDequal'
    */
   9600U,
 
   /* Variable: t_errQual
-   * Referenced by: '<S3>/t_errQual'
+   * Referenced by: '<S20>/t_errQual'
    */
   1280U,
 
   /* Variable: Vd_max
    * Referenced by:
-   *   '<S47>/Vd_max1'
-   *   '<S34>/Vd_max'
+   *   '<S36>/Vd_max'
+   *   '<S80>/Vd_max1'
    */
   14400,
 
   /* Variable: Vq_max_M1
-   * Referenced by: '<S47>/Vq_max_M1'
+   * Referenced by: '<S80>/Vq_max_M1'
    */
   { 14400, 14396, 14386, 14368, 14343, 14311, 14271, 14225, 14171, 14109, 14040,
     13963, 13879, 13786, 13685, 13576, 13459, 13333, 13198, 13053, 12900, 12736,
@@ -86,7 +86,7 @@ static P rtP = {
     9790, 9433, 9051, 8640, 8196, 7713, 7184, 6597, 5935, 5170, 4245, 3019, 0 },
 
   /* Variable: Vq_max_XA
-   * Referenced by: '<S47>/Vq_max_XA'
+   * Referenced by: '<S80>/Vq_max_XA'
    */
   { 0, 320, 640, 960, 1280, 1600, 1920, 2240, 2560, 2880, 3200, 3520, 3840, 4160,
     4480, 4800, 5120, 5440, 5760, 6080, 6400, 6720, 7040, 7360, 7680, 8000, 8320,
@@ -94,127 +94,127 @@ static P rtP = {
     12160, 12480, 12800, 13120, 13440, 13760, 14080, 14400 },
 
   /* Variable: a_phaAdvMax
-   * Referenced by: '<S5>/a_phaAdvMax'
+   * Referenced by: '<S42>/a_phaAdvMax'
    */
   400,
 
   /* Variable: i_max
    * Referenced by:
-   *   '<S47>/i_max'
-   *   '<S34>/i_max'
+   *   '<S36>/i_max'
+   *   '<S80>/i_max'
    */
   12000,
 
   /* Variable: id_fieldWeakMax
-   * Referenced by: '<S5>/id_fieldWeakMax'
+   * Referenced by: '<S42>/id_fieldWeakMax'
    */
   4000,
 
   /* Variable: n_commAcvLo
-   * Referenced by: '<S12>/n_commDeacv'
+   * Referenced by: '<S13>/n_commDeacv'
    */
   240,
 
   /* Variable: n_commDeacvHi
-   * Referenced by: '<S12>/n_commDeacv'
+   * Referenced by: '<S13>/n_commDeacv'
    */
   480,
 
   /* Variable: n_fieldWeakAuthHi
-   * Referenced by: '<S5>/n_fieldWeakAuthHi'
+   * Referenced by: '<S42>/n_fieldWeakAuthHi'
    */
   6400,
 
   /* Variable: n_fieldWeakAuthLo
-   * Referenced by: '<S5>/n_fieldWeakAuthLo'
+   * Referenced by: '<S42>/n_fieldWeakAuthLo'
    */
   4800,
 
   /* Variable: n_max
    * Referenced by:
-   *   '<S47>/n_max1'
-   *   '<S34>/n_max'
+   *   '<S36>/n_max'
+   *   '<S80>/n_max1'
    */
-  24000,
+  16000,
 
   /* Variable: n_stdStillDet
-   * Referenced by: '<S12>/n_stdStillDet'
+   * Referenced by: '<S13>/n_stdStillDet'
    */
   48,
 
   /* Variable: r_errInpTgtThres
-   * Referenced by: '<S3>/r_errInpTgtThres'
+   * Referenced by: '<S20>/r_errInpTgtThres'
    */
   9600,
 
   /* Variable: r_fieldWeakHi
-   * Referenced by: '<S5>/r_fieldWeakHi'
+   * Referenced by: '<S42>/r_fieldWeakHi'
    */
   16000,
 
   /* Variable: r_fieldWeakLo
-   * Referenced by: '<S5>/r_fieldWeakLo'
+   * Referenced by: '<S42>/r_fieldWeakLo'
    */
   12000,
 
   /* Variable: cf_KbLimProt
    * Referenced by:
-   *   '<S75>/cf_KbLimProt'
-   *   '<S76>/cf_KbLimProt'
+   *   '<S82>/cf_KbLimProt'
+   *   '<S83>/cf_KbLimProt'
    */
   768U,
 
   /* Variable: cf_idKp
-   * Referenced by: '<S57>/cf_idKp1'
+   * Referenced by: '<S63>/cf_idKp1'
    */
   819U,
 
   /* Variable: cf_iqKp
-   * Referenced by: '<S56>/cf_iqKp'
+   * Referenced by: '<S62>/cf_iqKp'
    */
   1229U,
 
   /* Variable: cf_nKp
-   * Referenced by: '<S55>/cf_nKp'
+   * Referenced by: '<S61>/cf_nKp'
    */
   4833U,
 
   /* Variable: cf_currFilt
-   * Referenced by: '<S43>/cf_currFilt'
+   * Referenced by: '<S50>/cf_currFilt'
    */
   7864U,
 
   /* Variable: cf_idKi
-   * Referenced by: '<S57>/cf_idKi1'
+   * Referenced by: '<S63>/cf_idKi1'
    */
   737U,
 
   /* Variable: cf_iqKi
-   * Referenced by: '<S56>/cf_iqKi'
+   * Referenced by: '<S62>/cf_iqKi'
    */
   1229U,
 
   /* Variable: cf_iqKiLimProt
    * Referenced by:
-   *   '<S74>/cf_iqKiLimProt'
-   *   '<S76>/cf_iqKiLimProt'
+   *   '<S81>/cf_iqKiLimProt'
+   *   '<S83>/cf_iqKiLimProt'
    */
   737U,
 
   /* Variable: cf_nKi
-   * Referenced by: '<S55>/cf_nKi'
+   * Referenced by: '<S61>/cf_nKi'
    */
   251U,
 
   /* Variable: cf_nKiLimProt
    * Referenced by:
-   *   '<S75>/cf_nKiLimProt'
-   *   '<S76>/cf_nKiLimProt'
+   *   '<S82>/cf_nKiLimProt'
+   *   '<S83>/cf_nKiLimProt'
    */
   246U,
 
   /* Variable: n_polePairs
-   * Referenced by: '<S14>/n_polePairs'
+   * Referenced by: '<S15>/n_polePairs'
    */
   15U,
 
@@ -224,14 +224,14 @@ static P rtP = {
   2U,
 
   /* Variable: z_selPhaCurMeasABC
-   * Referenced by: '<S42>/z_selPhaCurMeasABC'
+   * Referenced by: '<S49>/z_selPhaCurMeasABC'
    */
   0U,
 
   /* Variable: b_angleMeasEna
    * Referenced by:
-   *   '<S2>/b_angleMeasEna'
-   *   '<S12>/b_angleMeasEna'
+   *   '<S3>/b_angleMeasEna'
+   *   '<S13>/b_angleMeasEna'
    */
   0,
 
@@ -241,14 +241,14 @@ static P rtP = {
   0,
 
   /* Variable: b_diagEna
-   * Referenced by: '<S1>/b_diagEna'
+   * Referenced by: '<S4>/b_diagEna'
    */
   1,
 
   /* Variable: b_fieldWeakEna
    * Referenced by:
-   *   '<S1>/b_fieldWeakEna'
-   *   '<S90>/b_fieldWeakEna'
+   *   '<S6>/b_fieldWeakEna'
+   *   '<S97>/b_fieldWeakEna'
    */
   0
 };                                     /* Modifiable parameters */

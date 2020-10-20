@@ -579,7 +579,7 @@
  {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11265:2395:1#out:1",
   "className":"Simulink.Line",
-  "icon":"WebViewIcon5",
+  "icon":"WebViewIcon6",
   "name":"",
   "label":"",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11265:2395",
@@ -630,7 +630,7 @@
  {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11265:2395:2#out:1",
   "className":"Simulink.Line",
-  "icon":"WebViewIcon5",
+  "icon":"WebViewIcon6",
   "name":"",
   "label":"",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11265:2395",
@@ -681,7 +681,7 @@
  {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11265:2395:3#out:1",
   "className":"Simulink.Line",
-  "icon":"WebViewIcon5",
+  "icon":"WebViewIcon6",
   "name":"",
   "label":"",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11265:2395",
@@ -732,7 +732,7 @@
  {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11265:2395:7#out:1",
   "className":"Simulink.Line",
-  "icon":"WebViewIcon5",
+  "icon":"WebViewIcon6",
   "name":"",
   "label":"",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11265:2395",
@@ -783,7 +783,7 @@
  {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11265:2395:8#out:1",
   "className":"Simulink.Line",
-  "icon":"WebViewIcon5",
+  "icon":"WebViewIcon6",
   "name":"",
   "label":"",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11265:2395",
@@ -834,7 +834,7 @@
  {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11265:2395:6#out:1",
   "className":"Simulink.Line",
-  "icon":"WebViewIcon5",
+  "icon":"WebViewIcon6",
   "name":"",
   "label":"",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11265:2395",
@@ -885,7 +885,7 @@
  {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11265:2395:9#out:1",
   "className":"Simulink.Line",
-  "icon":"WebViewIcon5",
+  "icon":"WebViewIcon6",
   "name":"",
   "label":"",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11265:2395",

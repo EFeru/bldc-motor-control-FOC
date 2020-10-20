@@ -44,7 +44,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:11408:572">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,184,146)">
-            <image height="84" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABUCAYAAADu10VkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABj0lEQVRoge2asW7CMBBAH1XKwtouLEz9mM79jvZj+jH9mXbpwpIM6RAGGNrBh2oggC/JoRvuSSdbyMRPh+M46GbAC/AIPEhrSQ000ubRHA+sRGaZhSULYC79HbABfvoGVqRMLYGVhCX30m6BDmizz07E9hlbAU/GYpAy1ZEyVZ8Tu7uByCBCTEuIaQkxLW7FqoIxbwOu+z7gOweUiH2OnWQIJWJf5hY9uBVzu/hDTEuIaQkxLW7FSjbYa/xOcI0T3GYsxLSUrLFXc4se4jymxa2Y28UfYlpCTEuIaXErVrLBfphb9DDFs/J5CpFj3D6S4nShxa2Y2+0ixLSEmJaSu9LkL4BruM1YiGkJMS0hpsXqPDa6fsPq2HMTsSEZG/0e4PagGGd+LW4z5nYfCzEtIaYlxLRUpMrKBWeqKyfmG1jLnC2pDnZ3TqzhsGjWkrVEQyo3vShWS39fNGtJXtLcynzbS2J50awlrczRUvBT1jKg5T97VmwkuqztFZuRaq3npMVvfQPsJLZZfx9BEAD8Ab8MV8jyzACQAAAAAElFTkSuQmCC" y="0"/>
+            <image height="84" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABUCAYAAADu10VkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABc0lEQVRoge2aMW7CQBBFH5FDQ5s0NFQ5TOrcLNdLmjQ0drEpTIGLpNhB2RADHvCAI/0njXaFV9qnD7bRambAC/AIPNgYSQ00NpbV7C+sTGZZVCQLYG7zDtgAn30LK3JSS2BlFcm9jVugBVLx2R+xXWIr4ClYDHJSLTmp+pDY3RVEzkJiXiTmRWJeJOalGrDm7cT1kLfFELH3E9dvJnYqsecxRPYZI7EQhoi9hlv0MNm7UmJeJOZFYl70rvSid6WXMRIL4V8ndhOxyT7HJOZFYl4k5kViXiTmRWJeJOZFYl4k5mXIf/6vcIseJpuYxLxIzIvEvESd9lx8mBd1qHIVsXMSu/iUcbLHUDpR9DLZxCb7HJOYF4l5kZiXitxZueBAd+XIfABr2zOR+2C7Q2INv5tmI1lbNeR206Nitc13TbORlC3NyfbbHhMrm2YjSbZHYsBXWduCxE96UWys2mLsFZuRe63n5B9/9A3QWW2L+a6EEADf4gdWDt9l7v0AAAAASUVORK5CYII=" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,185,147)">
             <path d="M0,0 L30,0 L30,76 L0,76 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -117,7 +117,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:11408:573">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,259,158)">
-            <image height="110" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABuCAYAAABLNmGvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuElEQVR4nO2bMW7CQBBFP5FDQ5s0NFQ5TOqcIzlMDpPLJE0aGrtwCiigCMWOlQUM7DceNJH+k1ZrocX7NKzXY4uZAHgB8AjgwXpPagCN9XlrDgdWJjPPmiczAFM73gJYA/jpG1ghRWoOYGHNk3vrNwBWANrssyOxLmILAE/OYkCK1AopUvUpsbsbiAxCYiwSY5EYS1ixqmDM24Dzvg/4zh4lYp/XTjKEErEvd4sewoqFXfwSY5EYi8RYwoqVbLCX+B3hHEeEjZjEWErW2Ku7RQ/Kx1jCioVd/BJjkRiLxFjCipVssB/uFj2Mca98HkPkkLC3JGUXLGHFwm4XEmORGEvJVenyCuASYSMmMRaJsUiMxSsfu/r/G15pz03EhkTs6ueAsImicn6WsBELu49JjEViLBJjUXbBouyCJey98l9HTG8UcyTGIjEWibFIjEViLHrPzyIxFomxSIylQqpxnOFEnePIfANY2pwtUkXq9pRYg/3yVU+W1hqkws+zYrUdd+WrnuTFxa3NtzknlpevetLaHC0KfsraBrT4i54Xa2urrO8VmyBVPU+RFr/3BbC1tsmOuyaEAIAdk0NfnzCFwhUAAAAASUVORK5CYII=" y="0"/>
+            <image height="110" preserveAspectRatio="none" width="38" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAABuCAYAAABLNmGvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABpElEQVR4nO2bMW6DQBBFvyPixm3SuHGVw6TOzXK9pEnjBopNgQsokmIHZWOD4dsMXkv/SaNFZiWeBsOuBs0KwBuAZwBPNnpSAqhsTKM6nliYzDYJTzYA1nbcAjgA+O6bWCBmagtgZ+HJo40NgBpASH47EesytgPw4iwGxEzViJkqh8QeFhC5CImxSIxFYiwSYykmzPkYOe+yWkwR+xw5fzOxsYy9ziFyzBwZc2GK2Lu7RQ/ZPpUSY5EYi8RYtFayaK1kmSNjLtx1xm4ilu17TGIsEmORGIvEWCTGIjEWibFIjEViLFP2/D/uFj1kmzGJsUiMRWIsXtWeq4t5XkWVRcQuydjVVcZsy1CqKLJkm7Fs32MSY5EYi8RYtLtg0e6CJdu18q4zpu+VKRJjkRiLxFiyFVNxmOWuN4pL9CqdkO2tlBiLxFgkxlIg9jhuMNDnODNfAPZ2zYDYkdoOiVX4377qyd6iQmz8PCtW2nHXvupJ2lwc7HrNObG0fdWTYNcImHArS5sQ8Jc9Lw4WdTL2iq0Qu57XiH9+7wegtWiS4y6EEADwC0QtXw6ITVnWAAAAAElFTkSuQmCC" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,260,159)">
             <path d="M0,0 L30,0 L30,102 L0,102 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -519,5 +519,5 @@
       <!--RAWSTRING-->
     </g>
   </g>
-  <!--generated on windows @ 2020-10-11 21:39:11 W. Europe Daylight Time-->
+  <!--generated on windows @ 2020-10-20 17:30:17 W. Europe Daylight Time-->
 </svg>

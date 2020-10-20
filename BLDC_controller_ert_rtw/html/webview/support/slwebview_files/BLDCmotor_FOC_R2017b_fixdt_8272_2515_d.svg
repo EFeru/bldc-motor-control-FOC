@@ -15,7 +15,7 @@
         <!--RAWSTRING-->
         <g id="BLDCmotor_FOC_R2017b_fixdt:8272:2515:1577">
           <g clip-path="none" fill="none" opacity="0.65098" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,139,18)">
-            <image height="140" preserveAspectRatio="none" width="48" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAACMCAYAAAA6CiqJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZ0lEQVR4nO2dwW7TQBRFT1DoplvYdNMV/wJrvpWvASTYFFAi5BTVoFQ0LN5YdYMDE5zx9dB7pJGTyHLeybMz9ow9swBeA8+BZ2k5B1bAOi37Zb2/4pII+qJX5sA5cJZe3wItsBlacUn88hfAZSpz4GlaboEboOl99oB+Bi6BF1NEl8ktEfyG2H0GBZ5MGVEJLKDGAmosoKZ6gWXGOm+ARSo57FK5I2rS70Rl9AX4lMpn4rzmw3Hh/k6OwDvyg+/YAT+J2rQT6E7G1sBX4PrIbQ4yhUBLBLshzmmugW/p89HkCLzl3wT6u1BLnNe06f0PQm40U2RgqNwdub2D5Ai8P9WXlaD6v1ELqLGAGguoqV4gpyLbFY9iBNVnwAJqLKCmeoHcK7JSjG4Nz70iK8UkAiUz8GrsBtQZGI06A6N5FBmYtUD19YAF1FhAjQXUVC+QU5G9POH3tTzs7BjN1DVx18GxZeIemtlS/TFgATUWUGMBNdUL5FRkp6JIR0n1GahewH1kaiygpnqBKVunizybMOUVmUzgVBkY3RszRPXXxO6hUVO9QPX1gAXUWECNBdRYQI0F1FhAjQXUVC9Qqnl9svbUR5EBt06XxAJqLKDGAmosoMYCaiygxgJqLKDGtxocgW81GKL6fmLfaqCmeoHq6wELqKlewI27aiygxgJqLKBmSYyFe86B0eVFfASuiNga4uHpweePl8Qgvv3JCubAVSprYqzePwqs0utusoI50J/CoiHi2g6t2An0JyuYAw33oyT/dRdapRUa7rOhZn/wgBsOCCyIOTjOiIN4Lgfy/uAB/WKM+Z/4Bc3SnV8iwPx0AAAAAElFTkSuQmCC" y="0"/>
+            <image height="140" preserveAspectRatio="none" width="48" x="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAACMCAYAAAA6CiqJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACX0lEQVR4nO2dwW7TQBRFT5DpplvYdNMV/wJrvpWvoUiwKaBEyGlVU6WiYfHGqhscmNSxr4feI42cRJbzTp6d8XjsmQXwHngNvErLObAEVmnZLavdFSsi6LNOmQOnwEl6fQc0wLpvxYr45c+A81TmwMu03AA3QN357BHdDJwDb6aILpM7Ivg1sfv0CryYMqIxsIAaC6ixgJriBaqMdT4Ai1Ry2KZyT9SkP4nK6DvwNZVvxHnN58PC/ZMcgQvyg2/ZAr+I2rQVaE/GVsAP4OrAbfYyhUBDBLsmzmmugOv0+WByBD7yNIHuLtQQ5zVNen9LyA1migz0lfsDt7eXHIFPx/qyMSj+b9QCaiygxgJqihfIqci2o0cxgOIzYAE1FlBTvEBui2wsBl8Nz22RjcUkAmNm4N3QDagzMBh1BgbzLDIwa4Hi6wELqLGAGguoKV4gpyJ7e8Tva3jc2TGYqWvitoNjw8Q9NLOl+GPAAmosoMYCaooXcAeHGguosYAaC6iZ8ur0KM8mTNkikwkcKwODe2P6KL5N7B4aNcULFF8PWECNBdRYQI0F1FhAjQXUWEBN8QI5DZqnMNkl+WeRAXdwjIkF1FhAjQXUWECNBdRYQI0F1FhAjW81OADfatBH8f3EvtVATfECxdcDFlBTvIAv7qqxgBoLqLGAmooYC/eUPaPLi/gCXBKx1cTD073PH1fEIL7dyQrmwGUqK2Ks3r8KLNPrdrKCOdCdwqIm4tr0rdgKdCcrmAM1D6Mk/3MXWqYVah6yoWZ38IAb9ggsiDk4ToiDeC4H8u7gAd1ijPmf+A0tMpxeGjX0lgAAAABJRU5ErkJggg==" y="0"/>
           </g>
           <g clip-path="none" fill="#ffffff" fill-opacity="1" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,140,19)">
             <path d="M0,0 L40,0 L40,132 L0,132 L0,0 z" fill-rule="evenodd" vector-effect="none"/>
@@ -486,32 +486,32 @@
             <!--RAWSTRING-->
           </g>
           <!--RAWSTRING-->
-          <g data-tags="portannotationpanel PortDataTypeString">
-            <g clip-path="none" fill="none" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,117,128)">
-              <path d="M0,-12 L21.4844,-12 L21.4844,0 L0,0 L0,-12 z" fill-rule="evenodd" vector-effect="none"/>
-            </g>
-            <defs>
-              <clipPath id="clip59">
-                <path d="M-84,-99 L143,-99 L143,42 L-84,42 L-84,-99 z"/>
-              </clipPath>
-            </defs>
-            <g clip-path="url(#clip59)" fill="none" opacity="1" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,117,116)">
-              <text fill="#000000" fill-opacity="1" font-family="Arial" font-size="9" font-style="normal" font-weight="400" stroke="none" textLength="19.4844" x="1" xml:space="preserve" y="9">int16</text>
-            </g>
-            <!--RAWSTRING-->
-          </g>
-          <!--RAWSTRING-->
           <g data-tags="blk">
             <g clip-path="none" fill="none" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,105,144)">
               <path d="M-22.3984,0 L22.3984,0 L22.3984,14 L-22.3984,14 L-22.3984,0 z" fill-rule="evenodd" vector-effect="none"/>
             </g>
             <defs>
-              <clipPath id="clip60">
+              <clipPath id="clip59">
                 <path d="M-49.6016,-127 L177.398,-127 L177.398,14 L-49.6016,14 L-49.6016,-127 z"/>
               </clipPath>
             </defs>
-            <g clip-path="url(#clip60)" fill="none" opacity="1" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="0.6" stroke-width="1" transform="matrix(1,0,0,1,82.6016,144)">
+            <g clip-path="url(#clip59)" fill="none" opacity="1" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="0.6" stroke-width="1" transform="matrix(1,0,0,1,82.6016,144)">
               <text fill="#000000" fill-opacity="0.6" font-family="Arial" font-size="10" font-style="normal" font-weight="400" stroke="none" textLength="42.7969" x="1" xml:space="preserve" y="10">Ini=initVal</text>
+            </g>
+            <!--RAWSTRING-->
+          </g>
+          <!--RAWSTRING-->
+          <g data-tags="portannotationpanel PortDataTypeString">
+            <g clip-path="none" fill="none" opacity="1" stroke="none" stroke-opacity="0" transform="matrix(1,0,0,1,117,128)">
+              <path d="M0,-12 L21.4844,-12 L21.4844,0 L0,0 L0,-12 z" fill-rule="evenodd" vector-effect="none"/>
+            </g>
+            <defs>
+              <clipPath id="clip60">
+                <path d="M-84,-99 L143,-99 L143,42 L-84,42 L-84,-99 z"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#clip60)" fill="none" opacity="1" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-opacity="1" stroke-width="1" transform="matrix(1,0,0,1,117,116)">
+              <text fill="#000000" fill-opacity="1" font-family="Arial" font-size="9" font-style="normal" font-weight="400" stroke="none" textLength="19.4844" x="1" xml:space="preserve" y="9">int16</text>
             </g>
             <!--RAWSTRING-->
           </g>
@@ -592,5 +592,5 @@
       <!--RAWSTRING-->
     </g>
   </g>
-  <!--generated on windows @ 2020-10-11 21:39:09 W. Europe Daylight Time-->
+  <!--generated on windows @ 2020-10-20 17:30:15 W. Europe Daylight Time-->
 </svg>

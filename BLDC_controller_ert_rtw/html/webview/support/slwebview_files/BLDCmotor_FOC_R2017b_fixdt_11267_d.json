@@ -181,7 +181,7 @@
  {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11267:2363#out:1",
   "className":"Simulink.Line",
-  "icon":"WebViewIcon5",
+  "icon":"WebViewIcon6",
   "name":"",
   "label":"",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11267",
@@ -232,7 +232,7 @@
  {
   "sid":"BLDCmotor_FOC_R2017b_fixdt:11267:2362#out:1",
   "className":"Simulink.Line",
-  "icon":"WebViewIcon5",
+  "icon":"WebViewIcon6",
   "name":"",
   "label":"",
   "parent":"BLDCmotor_FOC_R2017b_fixdt:11267",
