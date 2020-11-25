@@ -4,6 +4,14 @@
 
 This repository implements Field Oriented Control (FOC) for BLDC motors in Matlab/Simulink. The controller was deployed and tested on a real-time hoverboard embedded platform:
  - [hoverboard-firmware-hack-FOC](https://github.com/EmanuelFeru/hoverboard-firmware-hack-FOC)
+ 
+---
+Table of Contents
+=======================
+
+* [FOC Architecture](#foc-architecture)
+* [Parameters](#parameters)
+* [Contributions](#contributions)
 
 ---
 ## FOC Architecture
@@ -35,7 +43,8 @@ The C code for the controller is capable for auto-code generated using [Matlab/S
 
 To explore the controller without a Matlab/Simulink installation a [webview](/BLDC_controller_ert_rtw/html/webview) was created. The webview allows to visualize the controller with browsers like: Microsoft Internet Explorer or Microsoft Edgeview.
 
-### Parameters 
+---
+## Parameters 
 
 The controller parameters are given in the following table:
 
