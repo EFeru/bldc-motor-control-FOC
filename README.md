@@ -11,6 +11,7 @@ Table of Contents
 
 * [FOC Architecture](#foc-architecture)
 * [Parameters](#parameters)
+* [Diagnostics](#diagnostics)
 * [Contributions](#contributions)
 
 ---
@@ -49,6 +50,13 @@ To explore the controller without a Matlab/Simulink installation a [webview](/BL
 The controller parameters are given in the following table:
 
 ![Parameters table](/02_Figures/paramTable.png)
+
+---
+### Diagnostics
+The motor is constantly monitored for errors. These errors are:
+- **Error 001**: Hall sensor not connected
+- **Error 002**: Hall sensor short circuit
+- **Error 004**: Motor NOT able to spin (Possible causes: motor phase disconnected, MOSFET defective, operational Amplifier defective, motor blocked)
 
 ---
 ## Contributions
