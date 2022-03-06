@@ -9,10 +9,18 @@ This repository implements Field Oriented Control (FOC) for BLDC motors in Matla
 Table of Contents
 =======================
 
+* [FOC Webview](#foc-webview)
 * [FOC Architecture](#foc-architecture)
 * [Parameters](#parameters)
 * [Diagnostics](#diagnostics)
 * [Contributions](#contributions)
+
+---
+## FOC Webview
+
+To explore the controller without a Matlab/Simulink installation click on the link below:
+
+[https://eferu.github.io/bldc-motor-control-FOC/](https://eferu.github.io/bldc-motor-control-FOC/)
 
 ---
 ## FOC Architecture
@@ -41,8 +49,6 @@ In this implementation 3 control types are available:
 ![Schematic representation of the available control methods](/02_Figures/control_methods.png)
 
 The C code for the controller is capable for auto-code generated using [Matlab/Simulink](https://nl.mathworks.com/solutions/embedded-code-generation.html). The controller is designed for [stock hoverboard motors](https://github.com/EmanuelFeru/hoverboard-firmware-hack-FOC/blob/master/docs/pictures/motor_inside.jpg) with the motor windings construction as shown [here](https://github.com/EmanuelFeru/hoverboard-firmware-hack-FOC/blob/master/docs/pictures/motor_winding.png). However, with slight modifications, the controller can be adapted to other available BLDC motors.
-
-To explore the controller without a Matlab/Simulink installation a [webview](/BLDC_controller_ert_rtw/html/webview) was created. The webview allows to visualize the controller with browsers like: Microsoft Internet Explorer or Microsoft Edgeview.
 
 ---
 ## Parameters 
